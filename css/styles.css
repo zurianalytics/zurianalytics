@@ -115,12 +115,14 @@ a.white {
 	color: #fff;
 }
 
-.testimonial-text {
+.team-member-text {
 	font: italic 400 1rem/1.5rem "Open Sans", sans-serif;
+	text-align: justify;
 }
 
-.testimonial-author {
+.team-member {
 	font: 700 1rem/1.5rem "Montserrat", sans-serif;
+	text-align:center
 }
 
 .btn-solid-reg {
@@ -799,7 +801,7 @@ input[type='checkbox'] {
 .slider-1 {
 	padding-top: 6.875rem;
 	padding-bottom: 6.375rem;
-	background-color: #3e4257;
+	background-color: #f3f7f9;
 }
 
 .slider-1 .slider-container {
@@ -837,8 +839,8 @@ input[type='checkbox'] {
 }
 
 .slider-1 .card-image {
-	width: 6rem;
-	height: 6rem;
+	width: 12rem;
+	height: 12rem;
 	margin-right: auto;
 	margin-bottom: 0.25rem;
 	margin-left: auto;
@@ -849,8 +851,14 @@ input[type='checkbox'] {
 	padding-bottom: 0;
 }
 
-.slider-1 .testimonial-author {
-	margin-bottom: 0;
+.slider-1 .card-body p
+{
+	color: #3e4257;
+	min-height: 3.2em;
+}
+	
+.slider-1 .team-member {
+	margin-bottom: 2;
 }
 
 
