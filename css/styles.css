@@ -706,7 +706,7 @@ input[type='checkbox'] {
 	margin-top: 0;
 	border: none;
 	border-radius: 0.25rem;
-	background-color: #4633af;
+	background-color: #3e4257;
 }
 
 .navbar-custom .dropdown-item {
@@ -715,7 +715,7 @@ input[type='checkbox'] {
 }
 
 .navbar-custom .dropdown-item:hover {
-	background-color: #4633af;
+	background-color: #4f566b;
 }
 
 .navbar-custom .dropdown-item .item-text {
@@ -781,7 +781,7 @@ input[type='checkbox'] {
 }
 
 .header .header-content {
-	padding-top: 4.5rem;
+	padding-top: 13rem;
 	padding-bottom: 7rem;
 	text-align: center;
 }
@@ -1335,13 +1335,13 @@ a.back-to-top {
 	width: 2.625rem;
 	height: 2.625rem;
 	border-radius: 1.875rem;
-	background: #546ad4 url("../images/up-arrow.png") no-repeat center 47%;
+	background: #9faae6 url("../images/up-arrow.png") no-repeat center 47%;
 	background-size: 1.125rem 1.125rem;
 	text-indent: -9999px;
 }
 
 a:hover.back-to-top {
-	background-color: #36edfd; 
+	background-color: #4f566b; 
 }
 
 
@@ -1673,7 +1673,7 @@ a:hover.back-to-top {
 
 	/* Header */
 	.header .header-content {
-		padding-top: 13rem;
+		padding-top: 9rem;
 		padding-bottom: 10rem;
 		text-align: left;
 	}
