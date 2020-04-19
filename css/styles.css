@@ -42,7 +42,7 @@ body, p {
 
 .special
 {
-	color: #9faae6;
+	color: #7dabf8;
 }
 
 .p-large {
@@ -114,7 +114,7 @@ a:hover {
 }
 
 a.turquoise {
-	color: #9faae6;
+	color: #7dabf8;
 }
 
 a.white {
@@ -645,16 +645,14 @@ input[type='checkbox'] {
 /*     03. Navigation     */
 /**************************/
 .navbar-custom {
-	background-color: #3e4257;
+	background-color: #1a2652;
 	box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
 	font: 700 0.75rem/2rem "Montserrat", sans-serif;
 	transition: all 0.2s;
 }
 
 .navbar-custom .navbar-brand.logo-image img {
-    width: 113px;
-	height: 34px;
-	margin-bottom: 1px;
+	height: 40px;
 	-webkit-backface-visibility: hidden;
 }
 
@@ -678,7 +676,7 @@ input[type='checkbox'] {
 
 .navbar-custom .nav-item .nav-link:hover,
 .navbar-custom .nav-item .nav-link.active {
-	color: #9faae6;
+	color: #7dabf8;
 }
 
 /* Dropdown Menu */
@@ -706,7 +704,7 @@ input[type='checkbox'] {
 	margin-top: 0;
 	border: none;
 	border-radius: 0.25rem;
-	background-color: #3e4257;
+	background-color: #1a2652;
 }
 
 .navbar-custom .dropdown-item {
@@ -715,7 +713,7 @@ input[type='checkbox'] {
 }
 
 .navbar-custom .dropdown-item:hover {
-	background-color: #4f566b;
+	background-color: #1a2652;
 }
 
 .navbar-custom .dropdown-item .item-text {
@@ -723,7 +721,7 @@ input[type='checkbox'] {
 }
 
 .navbar-custom .dropdown-item:hover .item-text {
-	color: #9faae6;
+	color: #7dabf8;
 }
 
 .navbar-custom .dropdown-items-divide-hr {
@@ -795,7 +793,7 @@ input[type='checkbox'] {
 }
 
 .header #js-rotating {
-	color: #9faae6;
+	color: #7dabf8;
 }
 
 .header .p-large {
@@ -819,7 +817,7 @@ input[type='checkbox'] {
 
 .slider-1 h2 
 {
-	color: #3e4257;
+	color: #1a2652;
 }
 	
 .slider-1 .slider-container {
@@ -871,7 +869,7 @@ input[type='checkbox'] {
 
 .slider-1 .card-body p
 {
-	color: #3e4257;
+	color: #1a2652;
 	min-height: 3.2em;
 }
 	
@@ -886,7 +884,7 @@ input[type='checkbox'] {
 .tabs {
 	padding-top: 6.5rem;
 	padding-bottom: 4.25rem;
-	background-color: #3e4257;
+	background-color: #1a2652;
 }
 
 .tabs h2 {
@@ -920,9 +918,9 @@ input[type='checkbox'] {
 
 .tabs .nav-link.active,
 .tabs .nav-link:hover {
-	border-bottom: 0.1875rem solid #9faae6;
+	border-bottom: 0.1875rem solid #7dabf8;
 	background-color: transparent;
-	color: #9faae6;
+	color: #7dabf8;
 }
 
 .tabs .nav-link .fas {
@@ -952,7 +950,7 @@ input[type='checkbox'] {
 	width: 3.5rem;
 	height: 3.5rem;
 	border-radius: 50%;
-	background-color: #9faae6;
+	background-color: #7dabf8;
 	text-align: center;
 	vertical-align: top;
 }
@@ -1033,7 +1031,7 @@ input[type='checkbox'] {
 .basic-2 {
 	padding-top: 3rem;
 	padding-bottom: 3.5rem;
-	background-color: #3e4257;
+	background-color: #1a2652;
 }
 
 .basic-2 img {
@@ -1055,7 +1053,7 @@ input[type='checkbox'] {
 .basic-3 {
 	padding-top: 3.5rem;
 	padding-bottom: 7.25rem;
-	background-color: #3e4257;
+	background-color: #1a2652;
 }
 
 .basic-3 .text-container {
@@ -1123,7 +1121,7 @@ input[type='checkbox'] {
 .lightbox-basic table .icon-cell {
 	width: 2rem;
 	padding-right: 0.25rem;
-	color: #9faae6;
+	color: #7dabf8;
 	text-align: center;
 }
 
@@ -1156,7 +1154,7 @@ input[type='checkbox'] {
 .slider-2 {
 	padding-top: 6.875rem;
 	padding-bottom: 6.875rem;
-	background-color: #3e4257;
+	background-color: #1a2652;
 }
 
 .slider-2 .slider-container {
@@ -1229,7 +1227,7 @@ input[type='checkbox'] {
 .counter {
 	padding-top: 6.5rem;
 	padding-bottom: 5.375rem;
-	background-color: #4f566b;
+	background-color: #1a2652;
 	text-align: center;
 }
 
@@ -1249,7 +1247,7 @@ input[type='checkbox'] {
 
 .counter #counter .counter-info {
 	margin-bottom: 0;
-	color: #9faae6;
+	color: #7dabf8;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 16px;
 	vertical-align: middle;
@@ -1261,7 +1259,7 @@ input[type='checkbox'] {
 /**********************/
 .footer {
 	padding-top: 5rem;
-	background-color: #4f566b;
+	background-color: #1a2652;
 }
 
 .footer .footer-col {
@@ -1273,7 +1271,7 @@ input[type='checkbox'] {
 }
 
 .footer .list-unstyled .fas {
-	color: #9faae6;
+	color: #7dabf8;
 	font-size: 0.5rem;
 	line-height: 1.375rem;
 }
@@ -1289,12 +1287,12 @@ input[type='checkbox'] {
 }
 
 .footer .fa-stack .fa-stack-1x {
-    color: #3e4257;
+    color: #7dabf8;
 	transition: all 0.2s ease;
 }
 
 .footer .fa-stack .fa-stack-2x {
-	color: #f1f1f8;
+	color: #7dabf8;
 	transition: all 0.2s ease;
 }
 
@@ -1303,7 +1301,7 @@ input[type='checkbox'] {
 }
 
 .footer .fa-stack:hover .fa-stack-2x {
-    color: #9faae6;
+    color: #7dabf8;
 }
 
 
@@ -1313,7 +1311,7 @@ input[type='checkbox'] {
 .copyright {
 	padding-top: 1rem;
 	padding-bottom: 0.5rem;
-	background-color: #3e4257;
+	background-color: #1a2652;
 	text-align: center;
 }
 
@@ -1335,13 +1333,13 @@ a.back-to-top {
 	width: 2.625rem;
 	height: 2.625rem;
 	border-radius: 1.875rem;
-	background: #9faae6 url("../images/up-arrow.png") no-repeat center 47%;
+	background: #7dabf8 url("../images/up-arrow.png") no-repeat center 47%;
 	background-size: 1.125rem 1.125rem;
 	text-indent: -9999px;
 }
 
 a:hover.back-to-top {
-	background-color: #4f566b; 
+	background-color: #1a2652; 
 }
 
 
@@ -1373,7 +1371,7 @@ a:hover.back-to-top {
 .ex-basic-2 {
 	padding-top: 4.75rem;
 	padding-bottom: 4rem;
-	background-color: #3e4257;
+	background-color: #1a2652;
 }
 
 .ex-basic-2 h3 {
@@ -1389,7 +1387,7 @@ a:hover.back-to-top {
 }
 
 .ex-basic-2 .list-unstyled .fas {
-	color: #9faae6;
+	color: #7dabf8;
 	font-size: 0.5rem;
 	line-height: 1.375rem;
 }
@@ -1461,13 +1459,13 @@ a:hover.back-to-top {
 	
 	.navbar-custom .nav-item .nav-link:hover,
 	.navbar-custom .nav-item .nav-link.active {
-		color: #9faae6;
+		color: #7dabf8;
 	}
 
 	.navbar-custom.top-nav-collapse {
         padding: 0.5rem 1.5rem 0.5rem 2rem;
 		box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
-		background-color: #3e4257;
+		background-color: #1a2652;
 	}
 
 	.navbar-custom.top-nav-collapse .navbar-brand.logo-text {
@@ -1480,7 +1478,7 @@ a:hover.back-to-top {
 	
 	.navbar-custom.top-nav-collapse .nav-item .nav-link:hover,
 	.navbar-custom.top-nav-collapse .nav-item .nav-link.active {
-		color: #9faae6;
+		color: #7dabf8;
 	}
 
 	.navbar-custom .dropdown-menu {
@@ -1645,7 +1643,7 @@ a:hover.back-to-top {
 	}
 	
 	.navbar-custom .fa-stack-2x {
-		color: #9faae6;
+		color: #7dabf8;
 		transition: all 0.2s ease;
 	}
 	
@@ -1659,7 +1657,7 @@ a:hover.back-to-top {
 	}
 
 	.navbar-custom .fa-stack:hover .fa-stack-1x {
-		color: #9faae6;
+		color: #7dabf8;
 	}
 	/* end of navigation */
 
