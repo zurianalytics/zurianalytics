@@ -1516,14 +1516,6 @@ a:hover.back-to-top {
 	}
 	/* end of details lightboxes */
 
-	
-	.slider-2 .swiper-button-next {
-		width: 1.375rem;
-		background-size: 1.375rem 2.125rem;
-	}
-	/* end of screenshots */
-
-
 	/* Contact */
 	.form .list-unstyled li {
 		display: inline-block;
