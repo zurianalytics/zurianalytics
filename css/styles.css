@@ -1277,7 +1277,7 @@ a:hover.back-to-top {
 .ex-header {
 	padding-top: 8rem;
 	padding-bottom: 5rem;
-	background: linear-gradient(to bottom right, #2c1a7e, #5557db);
+	background: url('../images/download-background.jpg') center center no-repeat;
 	text-align: center;
 }
 
@@ -1285,15 +1285,6 @@ a:hover.back-to-top {
 	padding-top: 2rem;
 	padding-bottom: 0.875rem;
 	background-color: #2f2c3d;
-}
-
-.ex-basic-1 .breadcrumbs {
-	margin-bottom: 1.125rem;
-}
-
-.ex-basic-1 .breadcrumbs .fa {
-	margin-right: 0.5rem;
-	margin-left: 0.625rem;
 }
 
 .ex-basic-2 {
@@ -1324,7 +1315,7 @@ a:hover.back-to-top {
 	margin-left: 0.625rem;
 }
 
-.ex-basic-2 .btn-outline-reg {
+.ex-basic-2 .btn-solid-lg {
 	margin-top: 1.75rem;
 }
 
