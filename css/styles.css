@@ -778,16 +778,6 @@ input[type='checkbox'] {
 	background-size: cover;
 }
 
-.header .header-content {
-	padding-top: 13rem;
-	padding-bottom: 7rem;
-	text-align: center;
-}
-
-.header .text-container {
-	margin-bottom: 3rem;
-}
-
 .header h1 {
 	margin-bottom: 1rem;
 }
@@ -1348,13 +1338,6 @@ a:hover.back-to-top {
 	/* end of navigation */
 
 
-	/* Header */
-	.header .header-content {
-		padding-top: 11rem;
-	}
-	/* end of header */
-
-
 	/* Testimonials */
 	.slider-1 .swiper-button-prev {
 		left: 1rem;
@@ -1497,19 +1480,6 @@ a:hover.back-to-top {
 		width: 65%;
 	}
 	/* end of general styles */
-
-
-	/* Header */
-	.header .header-content {
-		padding-top: 9rem;
-		padding-bottom: 10rem;
-		text-align: left;
-	}
-
-	.header .text-container {
-		margin-top: 6.5rem;
-	}
-	/* end of header */
 
 
 	/* Features */
@@ -1669,19 +1639,6 @@ a:hover.back-to-top {
 		width: 44%;
 	}
 	/* end of general styles */
-
-
-	/* Header */
-	.header .text-container {
-		margin-top: 7.5rem;
-		margin-left: 2.5rem;
-	}
-
-	.header .image-container {
-		margin-left: 3rem;
-	}
-	/* end of header */
-
 
 	/* Features */
 	.tabs {
