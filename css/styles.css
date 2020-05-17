@@ -882,8 +882,18 @@ video
 }
 
 
+
+
+
+
+
+
+
+
+
+
 /************************/
-/*     05. Features     */
+/*     05. Products     */
 /************************/
 .tabs {
 	padding-top: 6.5rem;
@@ -933,9 +943,9 @@ video
 
 .tabs .nav-link.active,
 .tabs .nav-link:hover {
-	border-bottom: 0.1875rem solid #7dabf8;
+	border-bottom: 0.1875rem solid #1a2652;
 	background-color: transparent;
-	color: #7dabf8;
+	color: #1a2652;
 }
 
 .tabs .nav-link .fas {
@@ -978,59 +988,31 @@ video
 	line-height: 3.5rem;
 }
 
-.tabs #tab-1 .card.left-pane .text-wrapper {
-	display: inline-block;
-	width: 75%;
-}
-
-.tabs #tab-1 .card.left-pane .card-icon {
-	float: left;
-	margin-right: 1rem;
-}
-
-.tabs #tab-1 img {
-	display: block;
-	margin: 2rem auto 3rem auto;
-}
-
-.tabs #tab-1 .card.right-pane .text-wrapper {
-	display: inline-block;
-	width: 75%;
-}
-
-.tabs #tab-1 .card.right-pane .card-icon {
-	margin-right: 1rem;
-}
-
-.tabs #tab-2 img {
+.tabs img {
 	display: block;
 	margin: 0 auto 2rem auto;
 }
 
-.tabs #tab-2 .text-area {
+.tabs .text-area {
 	margin-top: 1.5rem;
 }
 
-.tabs #tab-2 .icon-cards-area {
+.tabs .icon-cards-area {
 	margin-top: 2.5rem;
 }
 
-.tabs #tab-2 .icon-cards-area .card {
+.tabs .icon-cards-area .card {
 	width: 100%; /* for proper display in IE11 */
 }
 
-.tabs #tab-3 .icon-cards-area .card {
-	width: 100%; /* for proper display in IE11 */
-}
 
-.tabs #tab-3 .text-area {
-	margin-top: 0.75rem;
-	margin-bottom: 4rem;
-}
 
-.tabs #tab-3 img {
-	margin: 0 auto 3rem auto;
-}
+
+
+
+
+
+
 
 
 /*************************/
@@ -1379,48 +1361,24 @@ a:hover.back-to-top {
 		line-height: 4.5rem;
 	}
 
-	.tabs #tab-1 .card.left-pane .text-wrapper {
-		width: 85%;
-	}
-
-	.tabs #tab-2 img {
+	.tabs img {
 		margin-bottom: 0;
 	}
 
-	.tabs #tab-2 .text-area {
+	.tabs .text-area {
 		margin-top: 0;
 	}
 
-	.tabs #tab-2 .icon-cards-area .card {
+	.tabs .icon-cards-area .card {
 		display: inline-block;
 		width: 44%;
 		margin-right: 2.5rem;
 		vertical-align: top;
 	}
 
-	.tabs #tab-2 div.card:nth-child(2n+2) {
+	.tabs div.card:nth-child(2n+2) {
 		margin-right: 0;
 	}
-
-	.tabs #tab-3 .text-area {
-		margin-bottom: 0;
-	}
-
-	.tabs #tab-3 .icon-cards-area .card {
-		display: inline-block;
-		width: 44%;
-		margin-right: 2.5rem;
-		vertical-align: top;
-	}
-
-	.tabs #tab-3 div.card:nth-child(2n+2) {
-		margin-right: 0;
-	}
-
-	.tabs #tab-3 img {
-		margin-bottom: 0;
-	}
-	/* end of features */
 
 
 	/* Details Lightboxes */
@@ -1501,47 +1459,19 @@ a:hover.back-to-top {
 		padding: 1rem 0 1.5rem 0;
 	}
 	
-	.tabs #tab-1 .card.left-pane {
-		text-align: right;
-	}
-
-	.tabs #tab-1 .card.left-pane .text-wrapper,
-	.tabs #tab-1 .card.right-pane .text-wrapper {
-		width: 68%;
-	}
-
-	.tabs #tab-1 .card.left-pane .card-icon {
-		float: none;
-		margin-right: 0;
-		margin-left: 1rem;
-	}
-
-	.tabs #tab-1 img {
-		margin-top: 0;
-		margin-bottom: 0;
-	}
-	
-	.tabs #tab-2 .icon-cards-area {
+	.tabs .icon-cards-area {
 		margin-top: 2.25rem;
 	}
 
-	.tabs #tab-2 .icon-cards-area .card {
+	.tabs .icon-cards-area .card {
 		width: 45%;
 		margin-right: 3.5rem;
 	}
 
-	.tabs #tab-2 .icon-cards-area .card p {
+	.tabs .icon-cards-area .card p {
 		margin-bottom: 0.5rem;
 	}
 
-	.tabs #tab-3 .icon-cards-area .card {
-		width: 45%;
-		margin-right: 3.5rem;
-	}
-
-	.tabs #tab-3 .icon-cards-area .card p {
-		margin-bottom: 0.5rem;
-	}
 	/* end of features */
 
 
@@ -1659,61 +1589,26 @@ a:hover.back-to-top {
 		padding-bottom: 6.5rem;
 	}
 
-	.tabs #tab-1 .card.first {
-		margin-top: 4.25rem;
-	}
-
-	.tabs #tab-1 .card {
-		margin-bottom: 0.75rem;
-	}
-
-	.tabs #tab-1 .card.left-pane .text-wrapper,
-	.tabs #tab-1 .card.right-pane .text-wrapper {
-		width: 73%;
-	}
-
-	.tabs #tab-1 img {
-		margin-top: 0;
-	}
-
-	.tabs #tab-2 .container {
+	.tabs .container {
 		padding-right: 2.5rem;
 		padding-left: 2.5rem;
 	}
 
-	.tabs #tab-2 .text-area {
+	.tabs .text-area {
 		margin-top: 1.5rem;
 		margin-right: 1rem;
 		margin-left: 1rem;
 	}
 
-	.tabs #tab-2 .icon-cards-area {
+	.tabs .icon-cards-area {
 		margin-right: 1rem;
 		margin-left: 1rem;
 	}
 
-	.tabs #tab-2 .icon-cards-area .card {
+	.tabs .icon-cards-area .card {
 		margin-right: 3.875rem;
 	}
 
-	.tabs #tab-3 .container {
-		padding-right: 2.5rem;
-		padding-left: 2.5rem;
-	}
-	
-	.tabs #tab-3 .icon-cards-area {
-		margin-top: 2rem;
-		margin-left: 1rem;
-	}
-
-	.tabs #tab-3 .icon-cards-area .card {
-		margin-right: 3.875rem;
-	}
-	
-	.tabs #tab-3 .text-area {
-		margin-right: 1.5rem;
-		margin-left: 1rem;
-	}
 	/* end of features */
 
 
