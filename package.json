@@ -1,13 +1,10 @@
 {
   "name": "zuri-analytics-website",
-
   "version": "1.0.0",
-
   "scripts": {
     "dev": "npx @11ty/eleventy --input=. --output=build --serve",
     "generate": "npx @11ty/eleventy --input=. --output=build"
   },
-
   "devDependencies": {
     "eleventy": "^1.0.6"
   }

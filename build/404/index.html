@@ -31,12 +31,12 @@
     <title>404</title>
     
     <!-- Styles -->
+    <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/fontawesome-all.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
-	
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/fontawesome-all.css" rel="stylesheet">
+	<link href="/css/styles.css" rel="stylesheet">	
 	<!-- Icon  -->
     <link rel="icon" href="images/ZuriAnalytics-Logo-Dark.png">
 
@@ -58,11 +58,11 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
         <!-- Text Logo - Use this if you don't have a graphic logo -->
-        <!-- <a class="navbar-brand logo-text page-scroll" href="index.mustache">ZuriAnalytics</a> -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">ZuriAnalytics</a> -->
 
         <!-- Image Logo -->
-        <a class="navbar-brand logo-image" href="index.mustache">
-            <img src="images/ZuriAnalytics-Logo-White.png" alt="ZuriAnalytics Logo">
+        <a class="navbar-brand logo-image" href="index.html">
+            <img src="/images/ZuriAnalytics-Logo-White.png" alt="ZuriAnalytics Logo">
             <span class = "vertically-alligned"><span class = "special">Zuri</span>Analytics</span>
         </a>
         
@@ -76,14 +76,14 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="index.mustache#header">HOME <span class="sr-only">(current)</span></a>
+                    <a class="nav-link page-scroll" href="/#header">HOME <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="index.mustache#details">ABOUT</a>
+                    <a class="nav-link page-scroll" href="/#details">ABOUT</a>
                 </li>
                 <!-- Dropdown Menu -->          
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle page-scroll" href="index.mustache#Products" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">PRODUCTS</a>
+                    <a class="nav-link dropdown-toggle page-scroll" href="#Products" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">PRODUCTS</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="https://etf-data.com/"><span class="item-text">ETF DATA API</span></a>
                         <div class="dropdown-items-divide-hr"></div>
@@ -91,10 +91,10 @@
                 </li>
                 <!-- end of dropdown menu -->
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="index.mustache#team">TEAM</a>
+                    <a class="nav-link page-scroll" href="#team">TEAM</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="index.mustache#footer">CONTACT</a>
+                    <a class="nav-link page-scroll" href="#footer">CONTACT</a>
                 </li>
             </ul>
             <span class="nav-item social-icons">
@@ -114,7 +114,6 @@
         </div>
     </nav> <!-- end of navbar -->
     <!-- end of navbar -->
-
     <!-- Body -->
     <div class="ex-basic-2">
         <div class="container">
@@ -137,85 +136,82 @@
     </div> <!-- end of ex-basic-2 -->
     <!-- end of privacy content -->
 
-
     <!-- Footer -->
-    <div id="footer" class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="footer-col">
-                        <h4>About <span class ="special">Zuri</span>Analytics</h4>
-                        <p>We're passionate about delivering financial products which make data processing easier.</p>
-                    </div>
-                </div> <!-- end of col -->
-                <div class="col-md-3">
-                    <div class="footer-col middle">
-                        <h4>Important Links</h4>
-                        <ul class="list-unstyled li-space-lg">
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body"><a class="turquoise" href="terms_conditions.mustache">Terms & Conditions</a></div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body"><a class="turquoise" href="Privacy_Policy.mustache">Privacy Policy</a></div>
-                            </li>
-							<li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body"><a class="turquoise" href="Imprint.mustache">Imprint</a></div>
-                            </li>
-						</ul>
-                    </div>
-                </div> <!-- end of col -->
-				<div class="col-md-3">
-                    <div class="footer-col middle">
-                        <h4>Contact</h4>
-                        <p>For any queries and questions approach us at <a class="turquoise" href="mailto:contact@zurianalytics.com">contact@zurianalytics.com</a></p>
-                    </div>
-                </div> <!-- end of col -->
-                <div class="col-md-3">
-                    <div class="footer-col last">
-                        <h4>Social Media</h4>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-facebook-f fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-linkedin-in fa-stack-1x"></i>
-                            </a>
-                        </span>
-                    </div> 
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of footer -->  
-    <!-- end of footer -->
+<!-- Footer -->
+<div id="footer" class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="footer-col">
+                    <h4>About <span class ="special">Zuri</span>Analytics</h4>
+                    <p>We're passionate about delivering financial products which make data processing easier.</p>
+                </div>
+            </div> <!-- end of col -->
+            <div class="col-md-3">
+                <div class="footer-col middle">
+                    <h4>Important Links</h4>
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body"><a class="turquoise" href="/terms_conditions/">Terms & Conditions</a></div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body"><a class="turquoise" href="/privacy_policy/">Privacy Policy</a></div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body"><a class="turquoise" href="/imprint/">Imprint</a></div>
+                        </li>
+                    </ul>
+                </div>
+            </div> <!-- end of col -->
+            <div class="col-md-3">
+                <div class="footer-col middle">
+                    <h4>Contact</h4>
+                    <p>For any queries and questions approach us at <a class="turquoise" href="mailto:contact@zurianalytics.com">contact@zurianalytics.com</a></p>
+                </div>
+            </div> <!-- end of col -->
+            <div class="col-md-3">
+                <div class="footer-col last">
+                    <h4>Social Media</h4>
+                    <span class="fa-stack">
+                        <a href="#your-link">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-facebook-f fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="#your-link">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                        </a>
+                    </span>
+                </div> 
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of footer -->  
+<!-- end of footer -->
 
 
-    <!-- Copyright -->
-    <div class="copyright">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="p-small">Copyright © 2020 <span class = "special">Zuri</span>Analytics. All rights reserved</p>
-                </div> <!-- end of col -->
-            </div> <!-- enf of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of copyright --> 
-    <!-- end of copyright -->  
+<!-- Copyright -->
+<div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="p-small">Copyright © 2020 <span class = "special">Zuri</span>Analytics. All rights reserved</p>
+            </div> <!-- end of col -->
+        </div> <!-- enf of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of copyright --> 
+<!-- end of copyright -->
 
-	
-    <!-- Scripts -->
-    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
-    <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
-    <script src="js/particles.min.js"></script>
-    <script src="js/scripts.js"></script> <!-- Custom scripts -->
-</body>
+<!-- Scripts -->
+<script src="/js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+<script src="/js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+<script src="/js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+<script src="/js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
+<script src="/js/particles.min.js"></script>
+<script src="/js/scripts.js"></script> <!-- Custom scripts --></body>
 </html>
