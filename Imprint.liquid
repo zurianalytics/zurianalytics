@@ -31,7 +31,7 @@
     <title>Imprint</title>
     
     <!-- Styles -->
-    {{> styles }}
+    {% include styles %}
 	
 	<!-- Icon  -->
     <link rel="icon" href="images/ZuriAnalytics-Logo-Dark.png">
@@ -51,7 +51,7 @@
     <!-- end of preloader -->
     
 
-    {{> navigation }}
+    {% include navigation %}
 
 
     <!-- Header -->
@@ -94,7 +94,7 @@
 						<p>The content of ZuriAnalytics website is to be differentiated from the content of the websites of any other companies to which it is linked.</br>ZuriAnalytics expressly points out that because it is unable to influence such websites, ZuriAnalytics accepts no liability for their content.</br>In the event that such linked websites contain statements which infringe civil or criminal law ZuriAnalytics hereby distances itself from such content in advance. If such content should become known the relevant link will be deleted. However, ZuriAnalytics does not make constant checks especially for this purpose.</p>
                     </div> <!-- end of text-container -->
 
-                    <a class = "button-link back" href="index.mustache">BACK</a>
+                    <a class = "button-link back" href="index.liquid">BACK</a>
                 </div> <!-- end of col-->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -102,7 +102,7 @@
     <!-- end of privacy content -->
 
     <!-- Footer -->
-    {{> footer }}
+    {% include footer %}
 
 </body>
 </html>

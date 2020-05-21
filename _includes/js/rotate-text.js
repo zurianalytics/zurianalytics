@@ -48,5 +48,4 @@ window.onload = function() {
             new TxtRotate(elements[i], JSON.parse(toRotate), period);
         }
     }
-    document.body.appendChild(css);
 };

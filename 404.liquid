@@ -31,7 +31,7 @@
     <title>404</title>
     
     <!-- Styles -->
-    {{> styles }}
+    {% include styles %}
 	
 	<!-- Icon  -->
     <link rel="icon" href="images/ZuriAnalytics-Logo-Dark.png">
@@ -51,7 +51,7 @@
     <!-- end of preloader -->
     
 
-    {{> navigation }}
+    {% include navigation %}
 
     <!-- Body -->
     <div class="ex-basic-2">
@@ -62,7 +62,7 @@
                         <h1 style="font-size: 8rem; margin-top:8rem; margin-bottom: 4rem;">404</h1>
                         <h2>We are sorry!</h2>
                         <p> The content you are looking for seams to have </br> <span class ="special">lost its way</span></p>
-                        <a class = "button-link back" href="index.mustache">BACK TO HOMEPAGE</a>
+                        <a class = "button-link back" href="index.liquid">BACK TO HOMEPAGE</a>
                     </div> <!-- end of text-container-->
                 </div> <!-- end of col-->
                 <div class="col-lg-6 offset-lg-1>
@@ -76,6 +76,6 @@
     <!-- end of privacy content -->
 
     <!-- Footer -->
-    {{> footer }}
+    {% include footer %}
 </body>
 </html>

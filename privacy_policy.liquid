@@ -31,7 +31,7 @@
     <title>Privacy Policy</title>
     
     <!-- Styles -->
-    {{> styles }}
+    {% include styles %}
 	
 	<!-- Icon  -->
     <link rel="icon" href="images/ZuriAnalytics-Logo-Dark.png">
@@ -51,7 +51,7 @@
     <!-- end of preloader -->
     
 
-    {{> navigation }}
+    {% include navigation %}
 
 
     <!-- Header -->
@@ -234,7 +234,7 @@
 						<p>As defined by GDPR, ZuriAnalytics plays the role of a data controller.</p>
 						<p>ZuriAnalytics keeps its privacy policy under regular review and places any updates on this web page. This privacy policy was last updated on 26 April 2020.</p>
 					</div> <!-- end of text container -->
-                    <a class = "button-link back" href="index.mustache">BACK</a>
+                    <a class = "button-link back" href="index.liquid">BACK</a>
                 </div> <!-- end of col-->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -242,6 +242,6 @@
     <!-- end of privacy content -->
 
     <!-- Footer -->
-    {{> footer }}
+    {% include footer %}
 </body>
 </html>

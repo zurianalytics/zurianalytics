@@ -7,7 +7,9 @@
     "deploy": "deploy.sh"
   },
   "devDependencies": {
+    "clean-css": "^4.2.3",
     "eleventy": "^1.0.6",
-    "html-minifier": "^4.0.0"
+    "html-minifier": "^4.0.0",
+    "terser": "^4.7.0"
   }
 }

@@ -31,7 +31,7 @@
     <title>Terms and Conditions</title>
     
     <!-- Styles -->
-    {{> styles }}
+    {% include styles %}
 	
 	<!-- Icon  -->
     <link rel="icon" href="images/ZuriAnalytics-Logo-Dark.png">
@@ -50,7 +50,7 @@
     </div>
     <!-- end of preloader -->
     
-    {{> navigation }}
+    {% include navigation %}
 
     <!-- Header -->
     <header id="header" class="ex-header">
@@ -72,7 +72,7 @@
                 <div class="col-lg-10 offset-lg-1">
                     <div class="text-container">
                         <h3>Overall</h3>
-                        <p>All use of the Website, information, Services, and content distributed through or in conjunction with or made available on the Website is offered to you subject to your acceptance of these Terms and Conditions and our <a class="special" href="Privacy_Policy.mustache">Privacy Policy</a>. By ordering any Services from this Website, you are furthermore bound by this Website's Terms and Conditions. </br>The following Terms and Conditions incorporate a legal agreement between you (“the client”) and ZuriAnalytics XXX ("ZuriAnalytics”, “PRODUCT XXX”) and set forth the terms and conditions by which ZuriAnalytics will make its API Services available in order to electronically provide the client with use of and access to Data & Services.</p>
+                        <p>All use of the Website, information, Services, and content distributed through or in conjunction with or made available on the Website is offered to you subject to your acceptance of these Terms and Conditions and our <a class="special" href="Privacy_Policy.liquid">Privacy Policy</a>. By ordering any Services from this Website, you are furthermore bound by this Website's Terms and Conditions. </br>The following Terms and Conditions incorporate a legal agreement between you (“the client”) and ZuriAnalytics XXX ("ZuriAnalytics”, “PRODUCT XXX”) and set forth the terms and conditions by which ZuriAnalytics will make its API Services available in order to electronically provide the client with use of and access to Data & Services.</p>
                     </div> <!-- end of text-container -->
                     
                     <div class="text-container">
@@ -287,7 +287,7 @@
                             </li>
                         </ul>
                         <p>These Terms of Service incorporate by reference all notices and disclaimers contained in the Services constitute the entire agreement between the client and ZuriAnalytics with respect to access to, and use of, the Services. Except as specifically set forth herein, these Terms of Service supersede any prior agreements, including prior oral and/or written statements or representations not contained herein, between the client and ZuriAnalytics relating to the Services.</p>
-                        <a class = "button-link back" href="index.mustache">BACK</a>
+                        <a class = "button-link back" href="index.liquid">BACK</a>
                     </div> <!-- end of text-container -->
                 </div>
             </div> <!-- end of row -->
@@ -297,6 +297,6 @@
 
 
     <!-- Footer -->
-    {{> footer }}
+    {% include footer %}
 </body>
 </html>
