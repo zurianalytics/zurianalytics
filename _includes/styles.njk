@@ -1,11 +1,14 @@
 <!-- Styles -->
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
-<link href="/css/fontawesome-all.css" rel="stylesheet">
 
+
+{% set css %}
+    {% include "css/bootstrap.css" %}
+    {% include "css/styles.css" %}
+    {% include "css/fontawesome-all.css" %}
+{% endset %}
 
 <style>
-    {% include css/bootstrap.css | cssmin %}
-    {% include css/styles.css | cssmin %}
-    {% include css/fontawesome-all.css | cssmin %}
+    {{ css | cssmin | safe }}
 </style>

@@ -31,7 +31,7 @@
     <title>404</title>
     
     <!-- Styles -->
-    {% include styles %}
+    {% include 'styles.njk' %}
 	
 	<!-- Icon  -->
     <link rel="icon" href="images/ZuriAnalytics-Logo-Dark.png">
@@ -51,7 +51,7 @@
     <!-- end of preloader -->
     
 
-    {% include navigation %}
+    {% include 'navigation.njk' %}
 
     <!-- Body -->
     <div class="ex-basic-2">
@@ -65,7 +65,7 @@
                         <a class = "button-link back" href="index.liquid">BACK TO HOMEPAGE</a>
                     </div> <!-- end of text-container-->
                 </div> <!-- end of col-->
-                <div class="col-lg-6 offset-lg-1>
+                <div class="col-lg-6 offset-lg-1">
                     <div class="image-container-large">
                         <img src="images/ZuriAnalytics-404-page.jpg" alt="ZuriAnalytics 404">
                     </div>
@@ -76,6 +76,7 @@
     <!-- end of privacy content -->
 
     <!-- Footer -->
-    {% include footer %}
+    {% include 'footer.njk' %}
+
 </body>
 </html>
