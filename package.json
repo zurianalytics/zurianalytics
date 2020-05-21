@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "npx @11ty/eleventy --input=. --output=build --serve",
-    "generate": "npx @11ty/eleventy --input=. --output=build"
+    "generate": "npx @11ty/eleventy --input=. --output=build",
+    "deploy": "deploy.sh"
   },
   "devDependencies": {
     "eleventy": "^1.0.6"
