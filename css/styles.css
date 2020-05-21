@@ -78,7 +78,7 @@ section.white  *
 }
 
 section.white {
-	background-color: #f1f1f8;
+	background-color: #f3f7f9;
 	color: #1a2652;
 }
 
@@ -140,12 +140,7 @@ video
 	text-align:center
 }
 
-#team .card {
-	border: none;
-	background-color: transparent;
-}
-
-#team .card-image {
+section.white .card-image {
 	width: 12rem;
 	height: 12rem;
 	margin-right: auto;
@@ -154,11 +149,6 @@ video
 	border-radius: 50%;
 }
 
-#team .card-body p
-{
-	color: #1a2652;
-	min-height: 3.2em;
-}
 
 
 
@@ -187,14 +177,16 @@ video
 /************************/
 /* 05. Products Section */
 /************************/
-.tagline
+#products .tagline
 {
 	margin-top: -4rem;
+	text-align: center;
 }
 
 #products .nav-tabs {
 	margin-right: auto;
 	margin-bottom: 2.5rem;
+	margin-top: 2rem;
 	margin-left: auto;
 	justify-content: center;
 	border-bottom: none;
@@ -228,21 +220,21 @@ video
 	width: 100%; /* for proper display in IE11 */
 }
 
-#products .card {
+section.white .card {
 	border: none;
 	background: transparent;
 }
 
-#products .card-body {
+section.white .card-body {
 	padding: 1rem 0 1.25rem 0;
 }
 
-#products .card-title {
+section.white .card-title {
 	margin-bottom: 0.5rem;
 	color: #1a2652;
 }
 
-#products .card .card-icon {
+section.white .card .card-icon {
 	display: inline-block;
 	width: 3.5rem;
 	height: 3.5rem;
@@ -251,31 +243,6 @@ video
 	text-align: center;
 	vertical-align: top;
 }
-
-#products .card .card-icon .fas,
-#products .card .card-icon .far {
-	color: #f3f7f9;
-	font-size: 1.75rem;
-	line-height: 3.5rem;
-}
-
-#products img {
-	display: block;
-	margin: 0 auto 2rem auto;
-}
-
-#products .text-area {
-	margin-top: 1.5rem;
-}
-
-#products .icon-cards-area {
-	margin-top: 2.5rem;
-}
-
-#products .icon-cards-area .card {
-	width: 100%; /* for proper display in IE11 */
-}
-
 
 
 
@@ -294,7 +261,7 @@ video
 	padding-top: 6.5rem;
 	padding-bottom: 6.75rem;
 	background: url('../images/download-background.jpg') center center no-repeat;
-	background-size: cover; 
+	background-size: cover;
 }
 
 .basic-4 .text-container {
@@ -406,72 +373,14 @@ a:hover.back-to-top {
 }
 
 
-/***************************/
-/*     19. Extra Pages     */
-/***************************/
-.ex-header {
-	padding-top: 8rem;
-	padding-bottom: 5rem;
-	background: url('../images/download-background.jpg') center center no-repeat;
-	text-align: center;
-}
 
-.ex-basic-1 {
-	padding-top: 2rem;
-	padding-bottom: 0.875rem;
-	background-color: #2f2c3d;
-}
 
-.ex-basic-2 {
-	padding-top: 4.75rem;
-	padding-bottom: 4rem;
-	background-color: #1a2652;
-}
 
-.ex-basic-2 h2 {
-	margin-bottom: 1rem;
-	text-align: left;
-	font-size: 1.75rem;
-}
 
-.ex-basic-2 .text-container {
-	margin-bottom: 3.625rem;
-}
 
-.ex-basic-2 .text-container.last {
-	margin-bottom: 0;
-}
 
-.ex-basic-2 .list-unstyled .fas {
-	color: #7dabf8;
-	font-size: 0.5rem;
-	line-height: 1.375rem;
-}
 
-.ex-basic-2 .list-unstyled .media-body {
-	margin-left: 0.625rem;
-}
 
-.ex-basic-2 .btn-solid-lg {
-	margin-top: 1.75rem;
-}
-
-.ex-basic-2 .image-container-large {
-	margin-bottom: 4rem;
-}
-
-.ex-basic-2 .image-container-large img {
-	border-radius: 0.25rem;
-}
-
-.ex-basic-2 .image-container-small img {
-	border-radius: 0.25rem;
-}
-
-.ex-basic-2 .text-container.dark-bg {
-	padding: 1.625rem 1.5rem 0.75rem 2rem;
-	background-color: #f9fafc;
-}
 
 
 /*****************************/
@@ -479,19 +388,6 @@ a:hover.back-to-top {
 /*****************************/	
 /* Min-width width 768px */
 @media (min-width: 768px) {
-	
-	/* General Styles */
-	.p-heading {
-		width: 85%;
-		margin-right: auto;
-		margin-left: auto;
-	}
-
-	h1 {
-		font: 700 3.25rem/3.75rem "Montserrat", sans-serif;
-	}
-	/* end of general styles */
-
 
 	/* Navigation */
 	.navbar-custom {
@@ -558,92 +454,9 @@ a:hover.back-to-top {
 		color: #7dabf8;
 	}
 	/* end of navigation */
-
-
-	/* Testimonials */
-	.slider-1 .swiper-button-prev {
-		left: 1rem;
-		width: 1.375rem;
-		background-size: 1.375rem 2.125rem;
-	}
-
-	.slider-1 .swiper-button-next {
-		right: 1rem;
-		width: 1.375rem;
-		background-size: 1.375rem 2.125rem;
-	}
-	/* end of testimonials */
-
-
-	/* Features */
-	.tabs .card .card-icon {
-		width: 4.5rem;
-		height: 4.5rem;
-	}
-
-	.tabs .card .card-icon .fas,
-	.tabs .card .card-icon .far {
-		font-size: 2.25rem;
-		line-height: 4.5rem;
-	}
-
-	.tabs img {
-		margin-bottom: 0;
-	}
-
-	.tabs .text-area {
-		margin-top: 0;
-	}
-
-	.tabs .icon-cards-area .card {
-		display: inline-block;
-		width: 44%;
-		margin-right: 2.5rem;
-		vertical-align: top;
-	}
-
-	.tabs div.card:nth-child(2n+2) {
-		margin-right: 0;
-	}
-
-
-	/* Details Lightboxes */
-	.lightbox-basic {
-		padding: 3rem 3rem;
-	}
-	/* end of details lightboxes */
-
-	/* Contact */
-	.form .list-unstyled li {
-		display: inline-block;
-		margin-right: 0.5rem;
-		margin-left: 0.5rem;
-	}
-
-	.form .list-unstyled .address {
-		display: block;
-	}
-	/* end of contact */
-
-
-	/* Extra Pages */
-	.ex-header {
-		padding-top: 11rem;
-		padding-bottom: 9rem;
-	}
-
-	.ex-basic-2 .text-container.dark {
-		padding: 2.5rem 3rem 2rem 3rem;
-	}
-
-	.ex-basic-2 .text-container.column {
-		width: 90%;
-		margin-right: auto;
-		margin-left: auto;
-	}
-	/* end of extra pages */
 }
 /* end of min-width width 768px */
+
 
 
 /* Min-width width 992px */
@@ -671,121 +484,6 @@ a:hover.back-to-top {
 		transition: all 0.2s ease;
 	}
 	/* end of navigation */
-
-
-	/* General Styles */
-	.p-heading {
-		width: 65%;
-	}
-	/* end of general styles */
-
-
-	/* Features */
-	.tabs .card-body {
-		padding: 1rem 0 1.5rem 0;
-	}
-	
-	.tabs .icon-cards-area {
-		margin-top: 2.25rem;
-	}
-
-	.tabs .icon-cards-area .card {
-		width: 45%;
-		margin-right: 3.5rem;
-	}
-
-	.tabs .icon-cards-area .card p {
-		margin-bottom: 0.5rem;
-	}
-
-	/* end of features */
-
-
-	/* Video */
-	.basic-1 .image-container {
-		max-width: 53.125rem;
-		margin-right: auto;
-		margin-left: auto;
-	}
-	/* end of video */
-
-
-	/* Details 1 */
-	.basic-2 img {
-		margin-bottom: 0;
-	}
-
-	.basic-2 .text-container {
-		margin-top: 2.625rem;
-	}
-	/* end of details 1 */
-
-
-	/* Details 2 */
-	.basic-3 .text-container {
-		margin-top: 2.5rem;
-		margin-bottom: 0;
-	}
-	/* end of details 2 */
-
-
-	/* Details Lightboxes */
-	.lightbox-basic img {
-		margin-bottom: 0;
-		margin-left: 0;
-	}
-
-	.lightbox-basic h3 {
-		margin-top: 0.25rem;
-	}
-	/* end of details lightboxes */
-
-	/* Download */
-	.basic-4 {
-		padding-top: 6.75rem;
-	}
-
-	.basic-4 .text-container {
-		margin-top: 7rem;
-		margin-bottom: 0;
-		text-align: left;
-	}
-	/* end of download */
-
-
-	/* Statistics */
-	.counter {
-		padding-top: 6rem;
-		padding-bottom: 4.5rem;
-	}
-
-	.counter #counter .cell {
-		width: 8rem;
-		margin-right: 2.5rem;
-		margin-left: 2.5rem;
-	}
-	
-	.counter #counter .counter-value {
-		font: 700 4.25rem/4.5rem "Montserrat", sans-serif;	
-	}
-	/* end of statistics */
-
-
-	/* Extra Pages */
-	.ex-header h1 {
-		width: 80%;
-		margin-right: auto;
-		margin-left: auto;
-	}
-
-	.ex-basic-2 {
-		padding-bottom: 5rem;
-	}
-
-	.ex-basic-2 .text-container.column {
-		margin-bottom: 0;
-	}
-	/* end of extra pages */
 }
 /* end of min-width width 992px */
 
@@ -802,103 +500,6 @@ a:hover.back-to-top {
         padding: 0.5rem 5rem 0.5rem 5rem;
 	}
 	/* end of navigation */
-
-	
-	/* General Styles */
-	.p-heading {
-		width: 44%;
-	}
-	/* end of general styles */
-
-	/* Features */
-	.tabs {
-		padding-bottom: 6.5rem;
-	}
-
-	.tabs .container {
-		padding-right: 2.5rem;
-		padding-left: 2.5rem;
-	}
-
-	.tabs .text-area {
-		margin-top: 1.5rem;
-		margin-right: 1rem;
-		margin-left: 1rem;
-	}
-
-	.tabs .icon-cards-area {
-		margin-right: 1rem;
-		margin-left: 1rem;
-	}
-
-	.tabs .icon-cards-area .card {
-		margin-right: 3.875rem;
-	}
-
-	/* end of features */
-
-
-	/* Details 1 */
-	.basic-2 .text-container {
-		margin-top: 4.5rem;
-		margin-left: 4rem;
-		margin-right: 1.5rem;
-	}
-	/* end of details 1 */
-	
-	
-	/* Details 2 */
-	.basic-3 .text-container {
-		margin-top: 4.5rem;
-		margin-right: 3.5rem;
-		margin-left: 2rem;
-	}
-	/* end of details 2 */
-
-
-	/* Download */
-	.basic-4 .text-container {
-		margin-top: 11rem;
-	}
-
-	.basic-4 .image-container {
-		margin-left: 3rem;
-	}
-	/* end of download */
-
-
-	/* Footer */
-	.footer .footer-col {
-		width: 90%;
-	}
-
-	.footer .footer-col.middle {
-		margin-right: auto;
-		margin-left: auto;
-	}
-
-	.footer .footer-col.last {
-		margin-right: 0;
-		margin-left: auto;
-	}
-	/* end of footer */
-
-
-	/* Extra Pages */
-	.ex-header h1 {
-		width: 60%;
-		margin-right: auto;
-		margin-left: auto;
-	}
-
-	.ex-basic-2 .form-container {
-		margin-left: 1.75rem;
-	}
-
-	.ex-basic-2 .image-container-small {
-		margin-left: 1.75rem;
-	}
-	/* end of extra pages */
 }
 /* end of min-width width 1200px */
 
