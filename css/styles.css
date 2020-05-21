@@ -33,7 +33,7 @@ h2
 
 h3
 {
-	margin: 1rem 0 2rem 0;
+	margin: 6rem 0 1.4rem 0;
 }
 
 h4
@@ -74,8 +74,8 @@ a:hover {
 
 section, footer
 {
-	padding-top: 2rem;
-	padding-bottom: 4rem;
+	padding-top: 3rem;
+	padding-bottom: 5rem;
 }
 
 section.white  *
@@ -93,7 +93,12 @@ section.dark, footer.dark
 	background-color: #1a2652
 }
 
-
+.list-unstyled .fas {
+	color: #7dabf8;
+	font-size: 0.5rem;
+	line-height: 1.375rem;
+	margin-right: 1rem;
+}
 
 
 
@@ -230,6 +235,7 @@ section.white .card-image {
 section.white .card {
 	border: none;
 	background: transparent;
+	text-align: center;
 }
 
 section.white .card-body {
@@ -243,14 +249,22 @@ section.white .card-title {
 
 section.white .card .card-icon {
 	display: inline-block;
-	width: 3.5rem;
-	height: 3.5rem;
+	width: 4rem;
+	height: 4rem;
 	border-radius: 50%;
 	background-color: #1a2652;
 	text-align: center;
 	vertical-align: top;
+	margin-left: auto;
+	margin-right: auto;
 }
 
+section.white .card .card-icon .fas:before
+{
+	color: white;
+	font-size: 2rem;
+	line-height:4rem;
+}
 
 
 
