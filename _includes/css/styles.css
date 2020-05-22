@@ -535,19 +535,19 @@ a.dropdown-item:focus:after{
 	font-size: 2rem;
 }
 
-.navbar-custom button[aria-expanded='false'] .navbar-toggler-awesome.fas.fa-times{
+.navbar-custom button[aria-expanded='false'] .icon-cancel{
 	display: none;
 }
 
-.navbar-custom button[aria-expanded='false'] .navbar-toggler-awesome.fas.fa-bars{
+.navbar-custom button[aria-expanded='false'] .icon-menu{
 	display: inline-block;
 }
 
-.navbar-custom button[aria-expanded='true'] .navbar-toggler-awesome.fas.fa-bars{
+.navbar-custom button[aria-expanded='true'] .icon-menu{
 	display: none;
 }
 
-.navbar-custom button[aria-expanded='true'] .navbar-toggler-awesome.fas.fa-times{
+.navbar-custom button[aria-expanded='true'] .icon-cancel{
 	display: inline-block;
 	margin-right: 0.125rem;
 }
