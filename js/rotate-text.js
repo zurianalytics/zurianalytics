@@ -1,4 +1,4 @@
-var TxtRotate = function(el, toRotate, period) {
+let TxtRotate = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
     this.loopNum = 0;
@@ -21,7 +21,7 @@ TxtRotate.prototype.tick = function() {
     this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
 
     var that = this;
-    var delta = 20;
+    var delta = 25;
 
     if (this.isDeleting) { delta /= 2; }
 
@@ -31,7 +31,7 @@ TxtRotate.prototype.tick = function() {
     } else if (this.isDeleting && this.txt === '') {
         this.isDeleting = false;
         this.loopNum++;
-        delta = 0;
+        delta = 200;
     }
 
     setTimeout(function() {

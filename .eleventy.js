@@ -11,8 +11,8 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy('config')
     eleventyConfig.addPassthroughCopy('images')
     eleventyConfig.addPassthroughCopy('js')
-    eleventyConfig.addPassthroughCopy('webfonts')
     eleventyConfig.addPassthroughCopy('CNAME')
+    eleventyConfig.addPassthroughCopy('font')
 
     /**
      * Minify HTML

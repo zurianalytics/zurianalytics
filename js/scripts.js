@@ -60,13 +60,26 @@ window.onload = () => {
 
 
 	//Collapse the navbar on scroll
-    function collapse(){
+	function collapse()
+	{
 		if (window.scrollY > 20) 
 			document.querySelector('.fixed-top').classList.add('top-nav-collapse')
 		else 
 			document.querySelector('.fixed-top').classList.remove('top-nav-collapse')
 	}
 	document.addEventListener('scroll', collapse)
-	collapse()
+	collapse();
 
+
+	// Rotate text 
+	(function(){
+		var elements = document.getElementsByClassName('txt-rotate');
+		for (var i=0; i<elements.length; i++) {
+			var toRotate = elements[i].getAttribute('data-rotate');
+			var period = elements[i].getAttribute('data-period');
+			if (toRotate) {
+				new TxtRotate(elements[i], JSON.parse(toRotate), period);
+			}
+		}
+	}())
 }

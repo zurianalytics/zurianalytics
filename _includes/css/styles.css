@@ -265,7 +265,7 @@ section.white .card .card-icon {
 	margin-right: auto;
 }
 
-section.white .card .card-icon .fas:before
+section.white .card .card-icon i:before
 {
 	color: white;
 	font-size: 2rem;
