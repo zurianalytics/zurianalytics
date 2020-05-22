@@ -1,80 +1,72 @@
-/* Template: Juno - Multipurpose Landing Page Pack
-   Author: InovatikThemes
-   Created: Mar 2019
-   Description: Custom JS file
-*/
+window.onload = () => {
 
 
-(function($) {
-    "use strict";
 
-    /* Particle.js */
-    $(window).on('load', function() {
+
+	/* Particle.js */
+	(function(){
 		if (typeof particlesJS === 'undefined')
 			return
-        /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-        particlesJS.load('particles', 'config/particles.json', function() {
-            console.log('callback - particles.js config loaded');
-        });
-    });
+		/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+		particlesJS.load('particles', 'config/particles.json', function() {
+			console.log('callback - particles.js config loaded');
+		});
+	})();
 
-	/* Preloader */
-	$(window).on('load', function() {
-		var preloaderFadeOutTime = 500;
-		function hidePreloader() {
-			var preloader = $('.spinner-wrapper');
-			setTimeout(function() {
-				preloader.fadeOut(preloaderFadeOutTime);
-			}, 500);
-		}
-		hidePreloader();
-	});
+
+
 
 	
-	/* Navbar Scripts */
-	// jQuery to collapse the navbar on scroll
-    $(window).on('scroll load', function() {
-		if ($(".navbar").offset().top > 20) {
-			$(".fixed-top").addClass("top-nav-collapse");
-		} else {
-			$(".fixed-top").removeClass("top-nav-collapse");
-		}
-    });
 
-	// jQuery for page scrolling feature - requires jQuery Easing plugin
-	$(function() {
-		$(document).on('click', 'a.page-scroll', function(event) {
-			var $anchor = $(this);
-			$('html, body').stop().animate({
-				scrollTop: $($anchor.attr('href')).offset().top
-			}, 600, 'easeInOutExpo');
-			event.preventDefault();
-		});
-	});
-
-    // closes the responsive menu on menu item click
-    $(".navbar-nav li a").on("click", function(event) {
-    if (!$(this).parent().hasClass('dropdown'))
-        $(".navbar-collapse").collapse('hide');
-    });
+	/* Preloader */
+	(function(){
+		console.log("Preloader")
+		var preloader = document.querySelector('.spinner-wrapper');
+		setTimeout(() => { preloader.classList.add('faded'); }, 0);
+		setTimeout(() => { preloader.remove(); }, 500);
+	})();
 
 
-    /* Back To Top Button */
-    // create the back to top button
-    $('body').prepend('<a href="body" class="back-to-top page-scroll">Back to Top</a>');
-    var amountScrolled = 700;
-    $(window).scroll(function() {
-        if ($(window).scrollTop() > amountScrolled) {
-            $('a.back-to-top').fadeIn('500');
-        } else {
-            $('a.back-to-top').fadeOut('500');
-        }
-    });
 
 
-	/* Removes Long Focus On Buttons */
-	$(".button, a, button").mouseup(function() {
-		$(this).blur();
-	});
+	/* Back To Top Button Fade in / Fade out*/
+	// create the back to top button
+	var amountScrolled = 400;
+	window.addEventListener('scroll', event =>
+	{
+        if (window.scrollY > amountScrolled)
+			document.querySelector('a.back-to-top').classList.remove('faded')
+		else
+			document.querySelector('a.back-to-top').classList.add('faded')
+	})
 
-})(jQuery);
+
+
+	// Smooth scroll to link
+	document.querySelectorAll('.page-scroll').forEach(link => link.addEventListener('click', e =>
+	{
+		e.preventDefault()
+		// Get the reference
+		let link = e.currentTarget
+		let goto = link.getAttribute('href') 
+		// Scroll
+		document.querySelector(goto).scrollIntoView({ behavior: 'smooth' });
+	}))
+
+
+
+	// Remove long focus on links 
+	document.querySelectorAll('a').forEach(link => link.addEventListener('click', e => e.currentTarget.blur()))
+
+
+	//Collapse the navbar on scroll
+    function collapse(){
+		if (window.scrollY > 20) 
+			document.querySelector('.fixed-top').classList.add('top-nav-collapse')
+		else 
+			document.querySelector('.fixed-top').classList.remove('top-nav-collapse')
+	}
+	document.addEventListener('scroll', collapse)
+	collapse()
+
+}

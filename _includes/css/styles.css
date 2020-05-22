@@ -50,6 +50,7 @@ h4
 a {
 	color: #f1f1f8;
 	text-decoration: none;
+	outline: none;
 }
 
 a:hover {
@@ -354,13 +355,22 @@ a.back-to-top {
 	z-index: 999;
 	right: 0.75rem;
 	bottom: 0.75rem;
-	display: none;
+	opacity: 1;
 	width: 2.625rem;
 	height: 2.625rem;
 	border-radius: 1.875rem;
 	background: #7dabf8 url("../images/up-arrow.png") no-repeat center 47%;
 	background-size: 1.125rem 1.125rem;
 	text-indent: -9999px;
+
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+	transition: transform 0.3s, opacity 0.2s;
+}
+
+a.back-to-top.faded
+{
+	opacity: 0;
 }
 
 a:hover.back-to-top {
@@ -618,6 +628,15 @@ a.dropdown-item:focus:after{
 	bottom: 0;
 	left: 0;
 	background: #1a2652;
+	opacity: 1;
+	-webkit-transition: opacity 0.5s;
+	-moz-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+.spinner-wrapper.faded
+{
+	opacity: 0;
 }
 
 .spinner {
