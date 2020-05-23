@@ -1,15 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164363580-1"></script>
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
 
-	gtag('config', 'UA-164363580-1');
-	</script>
+    <!-- Tracking Pixels -->
+	{% include 'tracking_pixels.njk' %}
 	
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -23,7 +17,7 @@
 	<meta property="og:site" content="https://www.zurianalytics.com/"/> 
 	<meta property="og:title" content="Terms and conditions ZuriAnalytics"/> <!-- title shown in the actual shared post -->
 	<meta property="og:description" content="Our terms and conditions" />
-	<meta property="og:image" content="images/ZuriAnalytics-Logo-Dark.png"/> <!-- image link, make sure it's jpg -->
+	<meta property="og:image" content="/images/ZuriAnalytics_Logo_Dark"/> <!-- image link, make sure it's jpg -->
 	<meta property="og:url" content="https://www.zurianalytics.com/privacy-policy.html"/> 
 	<meta property="og:type" content="article"/>
 
@@ -33,24 +27,14 @@
     <!-- Styles -->
     {% include 'styles.njk' %}
 	
-	<!-- Icon  -->
-    <link rel="icon" href="images/ZuriAnalytics-Logo-Dark.png">
+	<!-- Favicon  -->
+    {% include 'favicon.njk' %}
 
 </head>
 
 <body data-spy="scroll" data-target=".fixed-top">
-    
-    <!-- Preloader -->
-	<div class="spinner-wrapper">
-        <div class="spinner">
-            <div class="bounce1"></div>
-            <div class="bounce2"></div>
-            <div class="bounce3"></div>
-        </div>
-    </div>
-    <!-- end of preloader -->
-    
-    {% include 'navigation.njk' %}
+      
+    {% include 'preloader_navigation.njk' %}
 
     <!-- Header -->
     <header id="header" class="ex-header">
@@ -287,12 +271,12 @@
                             </li>
                         </ul>
                         <p>These Terms of Service incorporate by reference all notices and disclaimers contained in the Services constitute the entire agreement between the client and ZuriAnalytics with respect to access to, and use of, the Services. Except as specifically set forth herein, these Terms of Service supersede any prior agreements, including prior oral and/or written statements or representations not contained herein, between the client and ZuriAnalytics relating to the Services.</p>
-                        <a class = "button-link back" href="index.liquid">BACK</a>
+                        <a class = "button-link back" href="/#header">BACK</a>
                     </div> <!-- end of text-container -->
                 </div>
             </div> <!-- end of row -->
         </div> <!-- end of container -->
-    </section> <!-- end of ex-basic -->
+    </section> <!-- end of dark -->
     <!-- end of terms content -->
 
 

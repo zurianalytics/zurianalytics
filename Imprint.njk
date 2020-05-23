@@ -1,15 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164363580-1"></script>
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
 
-	gtag('config', 'UA-164363580-1');
-	</script>
+    <!-- Tracking Pixels -->
+	{% include 'tracking_pixels.njk' %}
 	
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -23,7 +17,7 @@
 	<meta property="og:site" content="https://www.zurianalytics.com/"/> 
 	<meta property="og:title" content="Imprint ZuriAnalytics"/> <!-- title shown in the actual shared post -->
 	<meta property="og:description" content="Our imprint" />
-	<meta property="og:image" content="images/ZuriAnalytics-Logo-Dark.png"/> <!-- image link, make sure it's jpg -->
+	<meta property="og:image" content="/images/ZuriAnalytics_Logo_Dark"/> <!-- image link, make sure it's jpg -->
 	<meta property="og:url" content="https://www.zurianalytics.com/imprint.html"/> 
 	<meta property="og:type" content="article"/>
 
@@ -33,32 +27,22 @@
     <!-- Styles -->
     {% include 'styles.njk' %}
 	
-	<!-- Icon  -->
-    <link rel="icon" href="images/ZuriAnalytics-Logo-Dark.png">
+	<!-- Favicon  -->
+    {% include 'favicon.njk' %}
 
 </head>
 
 <body data-spy="scroll" data-target=".fixed-top">
     
-    <!-- Preloader -->
-	<div class="spinner-wrapper" style="display: none;">
-        <div class="spinner">
-            <div class="bounce1"></div>
-            <div class="bounce2"></div>
-            <div class="bounce3"></div>
-        </div>
-    </div>
-    <!-- end of preloader -->
-    
 
-    {% include 'navigation.njk' %}
+    {% include 'preloader_navigation.njk' %}
 
 
     <!-- Header -->
     <header id="header" class="ex-header">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-lg-12">
                     <h1>Imprint</h1>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -68,7 +52,7 @@
 
 
     <!-- Privacy Content -->
-    <div class="ex-basic-2">
+    <section class="dark">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 offset-lg-1">
@@ -94,11 +78,11 @@
 						<p>The content of ZuriAnalytics website is to be differentiated from the content of the websites of any other companies to which it is linked.</br>ZuriAnalytics expressly points out that because it is unable to influence such websites, ZuriAnalytics accepts no liability for their content.</br>In the event that such linked websites contain statements which infringe civil or criminal law ZuriAnalytics hereby distances itself from such content in advance. If such content should become known the relevant link will be deleted. However, ZuriAnalytics does not make constant checks especially for this purpose.</p>
                     </div> <!-- end of text-container -->
 
-                    <a class = "button-link back" href="index.liquid">BACK</a>
+                    <a class = "button-link back" href="/#header">BACK</a>
                 </div> <!-- end of col-->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
-    </div> <!-- end of ex-basic-2 -->
+    </section> <!-- end of dark -->
     <!-- end of privacy content -->
 
     <!-- Footer -->

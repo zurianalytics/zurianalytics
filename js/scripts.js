@@ -45,10 +45,12 @@ window.onload = () => {
 	// Smooth scroll to link
 	document.querySelectorAll('.page-scroll').forEach(link => link.addEventListener('click', e =>
 	{
-		e.preventDefault()
+		if(!(window.location.pathname.length > 1))
+			e.preventDefault()
+
 		// Get the reference
 		let link = e.currentTarget
-		let goto = link.getAttribute('href') 
+		let goto = link.getAttribute('href').replace("/", "")
 		// Scroll
 		document.querySelector(goto).scrollIntoView({ behavior: 'smooth' });
 	}))
