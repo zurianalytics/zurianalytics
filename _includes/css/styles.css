@@ -106,7 +106,16 @@ section.dark, footer.dark
 	margin-right: 1rem;
 }
 
+i:before
+{
+	font-size: 2.2rem;
+}
 
+a:hover 
+{
+	text-decoration: none;
+	color: white;
+}
 
 
 /*********************/
@@ -119,13 +128,18 @@ section.dark, footer.dark
 	height: 100%;
 }
 
-.header {
+header {
 	position: relative;
 	height: 100vh;
 	background: radial-gradient(circle, rgb(26, 38, 82) 0%, rgb(5, 7, 15) 100%);
 	background-size: cover;
 }
 
+header.small
+{
+	height: 50vh;
+	background: rgb(5, 7, 15);
+}
 
 
 
@@ -316,6 +330,7 @@ section.white .card .card-icon i:before
 footer .fa-stack .fa-stack-2x {
 	transition: all 0.2s ease;
 	color: #7dabf8;
+	size: ;
 }
 
 footer .fa-stack:hover .fa-stack-2x{
