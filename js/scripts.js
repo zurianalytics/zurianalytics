@@ -20,7 +20,6 @@ window.onload = () => {
 
 	/* Preloader */
 	(function(){
-		console.log("Preloader")
 		var preloader = document.querySelector('.spinner-wrapper');
 		setTimeout(() => { preloader.classList.add('faded'); }, 0);
 		setTimeout(() => { preloader.remove(); }, 500);
