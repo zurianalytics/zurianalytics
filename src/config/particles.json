@@ -1,14 +1,14 @@
 {
   "particles": {
     "number": {
-      "value": 104,
+      "value": 160,
       "density": {
         "enable": true,
-        "value_area": 710.2440872179734
+        "value_area": 800
       }
     },
     "color": {
-      "value": "#83abe3"
+      "value": "#7dabf8"
     },
     "shape": {
       "type": "circle",
@@ -54,7 +54,7 @@
     },
     "move": {
       "enable": true,
-      "speed": 6,
+      "speed": 0.9,
       "direction": "none",
       "random": false,
       "straight": false,
@@ -71,11 +71,11 @@
     "detect_on": "canvas",
     "events": {
       "onhover": {
-        "enable": true,
-        "mode": "grab"
+        "enable": false,
+        "mode": "bubble"
       },
       "onclick": {
-        "enable": true,
+        "enable": false,
         "mode": "push"
       },
       "resize": true
