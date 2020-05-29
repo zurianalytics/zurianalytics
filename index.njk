@@ -1,224 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Tracking Pixels -->
-	{% include 'tracking_pixels.njk' %}
-	
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="ZuriAnalytics is an European fintech company focused on big data processing and customization. We deliver analytics and insights using machine learning. Our goal is to enable investors and investment professionals by providing high quality financial data through automation.">
-    <meta name="author" content="ZuriAnalytics">
+    <head>
+        <!-- Tracking Pixels -->
+        {% include 'tracking_pixels.njk' %}
 
-    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
-	<meta property="og:site_name" content="ZuriAnalytics"/> 
-	<meta property="og:site" content="https://www.zurianalytics.com/"/> 
-	<meta property="og:title" content="Financial big data analytics and insights using machine learning"/> <!-- title shown in the actual shared post -->
-	<meta property="og:description" content="Homepage" />
-	<meta property="og:image" content="/images/ZuriAnalytics_Logo_Dark"/> 
-	<meta property="og:url" content="https://www.zurianalytics.com/"/> 
-	<meta property="og:type" content="article"/>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Website Title -->
-    <title>ZuriAnalytics</title>
-    
-    <!-- Styles -->
-    {% include 'styles.njk' %}
-	
-	<!-- Favicon  -->
-    {% include 'favicon.njk' %}
+        <!-- SEO Meta Tags -->
+        <meta name="description" content="ZuriAnalytics is an European fintech company focused on big data processing and customization. We deliver analytics and insights using machine learning. Our goal is to enable investors and investment professionals by providing high quality financial data through automation.">
+        <meta name="author" content="ZuriAnalytics">
 
-</head>
+        <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+        <meta property="og:site_name" content="ZuriAnalytics"/>
+        <meta property="og:site" content="https://www.zurianalytics.com/"/>
+        <meta property="og:title" content="Financial big data analytics and insights using machine learning"/>
+        <!-- title shown in the actual shared post -->
+        <meta property="og:description" content="Homepage"/>
+        <meta property="og:image" content="/images/ZuriAnalytics_Logo_Dark"/>
+        <meta property="og:url" content="https://www.zurianalytics.com/"/>
+        <meta property="og:type" content="article"/>
 
-<body data-spy="scroll" data-target=".fixed-top">
-     
-    {% include 'preloader_navigation.njk' %}
+        <!-- Website Title -->
+        <title>ZuriAnalytics</title>
 
-    <!-- Header -->
-    <header id="header" class="header" >
-        <div id = "particles"></div>
+        <!-- Styles -->
+        {% include 'styles.njk' %}
+
+        <!-- Favicon  -->
+        {% include 'favicon.njk' %}
+
+    </head>
+
+    <body data-spy="scroll" data-target=".fixed-top">
+
+        {% include 'preloader_navigation.njk' %}
+
+        <!-- Header -->
+        <header id="header" class="header" >
+            <div id = "particles" class = "overlay"></div>
+            <div id = "particles" class = "overlay blur"></div>
             <div class="container h-100">
                 <div class="row align-items-center justify-content-center h-100">
                     <div class="col-sm-6 text-center text-md-left">
-                        <h1><span class = "special">Zuri</span>Analytics <br>Using
+                        <h1>
+                            <span class = "special">Zuri</span>Analytics <br>Using
                             <span id="js-rotating" class = "special txt-rotate" data-period="2000"
                                   data-rotate='[ "Machine Learning", "Big Data Tech"]'></span></h1>
 
                         <p class="p-large">We specialize in gathering and processing terabytes of data each day, so you don't have to!</p>
                         <a class = "button-link page-scroll" href="#details">HOW?</a>
-                    </div> <!-- end of col -->
-                </div> <!-- end of row -->
-            </div> <!-- end of container -->
-    </header> <!-- end of header -->
-    <!-- end of header -->
+                    </div>
+                    <!-- end of col -->
+                </div>
+                <!-- end of row -->
+            </div>
+            <!-- end of container -->
+        </header>
+        <!-- end of header -->
 
-    <!-- Details 1 -->
-    <section id="details" class="dark">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>About</h2>
-				</div>	<!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-6">
-                    <video src = "images/ZuriAnalytics_Business_Visualization.mp4" autoplay loop muted alt="ZuriAnalytics business visualization"></video>
-                </div> <!-- end of col -->
-                <div class="col-lg-6">
-                    <div class="text-container">
-                        <h3>1. Data Collection</h3>
-                        <p>We subscribe to data feeds of big institutions which provide us with raw data.
-                            We run daily batches to aggregate this data and extract intelligence</p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </section> <!-- end of basic-2 -->
-    <!-- end of details 1 -->
+        <!-- Details 1 -->
+        <section id="details" class="dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>About</h2>
+                    </div>
+                    <!-- end of col -->
+                </div>
+                <!-- end of row -->
+                <div class="row">
+                    <div class="col-lg-6">
+                        <video src = "images/ZuriAnalytics_Business_Visualization.mp4" autoplay loop muted alt="ZuriAnalytics business visualization"></video>
+                    </div>
+                    <!-- end of col -->
+                    <div class="col-lg-6">
+                        <div class = "row">
+                            <div class="text-container">
+                                <h3>1. Data Collection</h3>
+                                <p>
+                                    We run daily batches on extensive amount of data, aggregate it and extract intelligence. Information is extracted
+                                    using NLP, ML and statistical models.
+                                </p>
+                            </div>
+                            <div class="text-container">
+                                <h3 class = "mt-2">2. Easy to Consume APIs</h3>
+                                <p>
+                                    The extracted information is automatically deployed in a scallable web cluster that provide fast reliable APIs to it.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- end of text-container -->
+                    </div>
 
+                    <!-- end of col -->
+                </div>
+                <!-- end of row -->
+            </div>
+            <!-- end of container -->
+        </section>
+        <!-- end of basic-2 -->
+        <!-- end of details 1 -->
 
-    <!-- Products -->
-    <section id="products" class="tabs white section">
-        <div class="container">
-            <div class="row justify-content-md-center">
-                <div class="col-lg-6">
-                    <h2>PRODUCTS</h2>
-                    <div class="tagline">ZuriAnalytics offers mutiple products for the financial industry. Both investors and enterprises profit from our solutions.</div>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            
-            <div class="row">
-
-                <!-- Tabs Links -->
-                <ul class="nav nav-tabs" id="Tabs" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="nav-tab" data-toggle="tab" href="#tab" role="tab" aria-controls="tab" aria-selected="false"><i class="fas fa-search"></i>APIs</a>
-                    </li>
-                </ul>
-                <!-- end of tabs links -->
-
-
-                <!-- Tabs Content-->
-                <div class="tab-content" id="TabsContent">
-                    <!-- Tab -->
-                    <div class="tab-pane fade show active" id="tab" role="tabpanel" aria-labelledby="tab">
-                        <div class="container">
-                            <div class="row justify-content-md-center">
-
-                                <div class = "col-md-3 px-5">
-                                    <div class="card">
-                                        <div class="card-icon">
-                                            <i class = "icon-network"></i>
-                                        </div>
-                                        <div class="card-body">
-                                            <h4 class="card-title">Product Title</h4>
-                                            <p>This is a short description of the product</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class = "col-md-3 px-5">
-                                    <div class="card">
-                                        <div class="card-icon">
-                                            <i class="icon-network"></i>
-                                        </div>
-                                        <div class="card-body">
-                                            <h4 class="card-title">Product Title</h4>
-                                            <p>This is a short description of the product</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class = "col-md-3 px-5">
-                                    <div class="card">
-                                        <div class="card-icon">
-                                            <i class="icon-network"></i>
-                                        </div>
-                                        <div class="card-body">
-                                            <h4 class="card-title">Product Title</h4>
-                                            <p>This is a short description of the product</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div> <!-- end of row -->
-                        </div> <!-- end of container -->
-                    </div> <!-- end of tab-pane -->
-                    <!-- end of tab -->
-                </div> <!-- end of tab-content -->
-                <!-- end of tabs content -->
-
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </section> <!-- end of tabs -->
-    <!-- end of features -->
-
-    <!-- Download -->
-    <div class="basic-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-xl-5">
-                    <div class="text-container">
-                        <h2>Discover our flagship product</h2>
-                        <p class="p-large">XXX</p>
-                        <a class = "button-link" href="#your-link">SEE DEMO</a>
-                        <a class = "button-link" href="#your-link">SUBSCRIBE</a>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-6 col-xl-7">
-                    <div class="image-container">
-                        <img class="img-fluid" src="images/download.png" alt="alternative">
-                    </div> <!-- end of img-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-4 -->
-    <!-- end of download -->
-
-    <!-- Team -->
-    <section id="team" class="white">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>TEAM</h2>
-				</div>	<!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">			
-                <div class="col-lg-4 px-5">
-                    <div class="card">
-                        <img class="card-image" src="images/ZuriAnalytics_Technical_director_and_Co-Founder-Slavin-Donchev.jpg" alt="ZuriAnalytics Technical Director and Co-Founder Slavin Donchev">
-                        <div class="card-body">
-                            <p class="team-member">Slavin Donchev - Technical Director & Co-founder</p>
-							<p class="team-member-text">Slavin has over 10 years of experience as a big data architect in the financial industry.</p>
+        <!-- Products -->
+        <section id="products" class="tabs white section">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col-lg-6">
+                        <h2>PRODUCTS</h2>
+                        <div class="tagline">
+                            ZuriAnalytics is currently working on and improving our pilot product, but we also offer customized solutions
                         </div>
                     </div>
-                </div> <!-- end of col -->
+                    <!-- end of col -->
+                </div>
+                <!-- end of row -->
 
-                <div class="col-lg-4 px-5">
-                    <div class="card">
-                        <img class="card-image" src="images/ZuriAnalytics_Marketing_Director-and_Co-Founder_Dayana-Doncheva.jpg" alt="ZuriAnalytics Marketing Director and Co-Founder Dayana Doncheva">
-                        <div class="card-body">
-                            <p class="team-member">Dayana Doncheva - Marketing Director & Co-founder</p>
-							<p class="team-member-text">Dayana has been working in digital marketing for big brands since 2013.</p>
+                <div class="row">
+
+                    <!-- Tabs Links -->
+                    <ul class="nav nav-tabs" id="Tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="nav-tab" data-toggle="tab" href="#tab" role="tab" aria-controls="tab" aria-selected="false">
+                                <i class="fas fa-search"></i>Solutions</a>
+                        </li>
+                    </ul>
+                    <!-- end of tabs links -->
+
+                    <!-- Tabs Content-->
+                    <div class="tab-content" id="TabsContent">
+                        <!-- Tab -->
+                        <div class="tab-pane fade show active" id="tab" role="tabpanel" aria-labelledby="tab">
+                            <div class="container">
+                                <div class="row justify-content-md-center">
+
+                                    <div class = "col-md-3 px-5">
+                                    
+                                        <div class="card">
+                                            <a href = "https://test.api.etf.zurianalytics.com" class="card-icon">
+                                                <i class = "icon-network"></i>
+                                            </a>
+                                            <div class="card-body">
+                                                <h4 class="card-title">
+                                                    <a href = "https://test.api.etf.zurianalytics.com">
+                                                    ETF Data API</a></h4>
+                                                <p>Quality ETF fundamental data, updated daily.</p>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </div>
+                                    <div class = "col-md-3 px-5">
+                                        <div class="card">
+                                            <div class="card-icon">
+                                                <i class="icon-network"></i>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="card-title">Custom Solutions</h4>
+                                                <p>
+                                                    We offer implementation and deployment of custom data aggregation solutions.
+                                                    <a href = "#footer">Contact Us</a> 
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- end of row -->
+                            </div>
+                            <!-- end of container -->
+                        </div>
+                        <!-- end of tab-pane -->
+                        <!-- end of tab -->
+                    </div>
+                    <!-- end of tab-content -->
+                    <!-- end of tabs content -->
+
+                </div>
+                <!-- end of row -->
+            </div>
+            <!-- end of container -->
+        </section>
+        <!-- end of tabs -->
+        <!-- end of features -->
+
+        <!-- Download -->
+        <section class = "dark">
+        </section>
+        <!-- end of basic-4 -->
+        <!-- end of download -->
+
+        <!-- Team -->
+        <section id="team" class="white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>TEAM</h2>
+                    </div>
+                    <!-- end of col -->
+                </div>
+                <!-- end of row -->
+                <div class="row">
+                    <div class="col-lg-4 px-5">
+                        <div class="card">
+                            <img class="card-image" src="images/ZuriAnalytics_Technical_director_and_Co-Founder-Slavin-Donchev.jpg" alt="ZuriAnalytics Technical Director and Co-Founder Slavin Donchev">
+                            <div class="card-body">
+                                <p class="team-member">Slavin Donchev - Technical Director & Co-founder</p>
+                                <p class="team-member-text">Slavin has over 10 years of experience as a big data architect in the financial industry.</p>
+                            </div>
                         </div>
                     </div>
-                </div> <!-- end of col -->
+                    <!-- end of col -->
 
-                <div class="col-lg-4 px-5">
-                    <div class="card">
-                        <img class="card-image" src="images/ZuriAnalytics_Senior_Software_Engineer_Yordan-Dimitrov.jpg" alt="ZuriAnalytics Senior Software Engineer Yordan Dimitrov">
-                        <div class="card-body">
-                            <p class="team-member">Yordan Dimitrov - Senior Software Engineer</p>
-							<p class="team-member-text">Yordan is passionate about finance and has multiple years of experience in IT.</p>
+                    <div class="col-lg-4 px-5">
+                        <div class="card">
+                            <img class="card-image" src="images/ZuriAnalytics_Marketing_Director-and_Co-Founder_Dayana-Doncheva.jpg" alt="ZuriAnalytics Marketing Director and Co-Founder Dayana Doncheva">
+                            <div class="card-body">
+                                <p class="team-member">Dayana Doncheva - Marketing Director & Co-founder</p>
+                                <p class="team-member-text">Dayana has been working in digital marketing for big brands since 2013.</p>
+                            </div>
                         </div>
                     </div>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </section> <!-- end of slider-1 -->
-    <!-- end of The team -->
+                    <!-- end of col -->
 
-    <!-- Footer -->
-    {% include 'footer.njk' %}
+                    <div class="col-lg-4 px-5">
+                        <div class="card">
+                            <img class="card-image" src="images/ZuriAnalytics_Senior_Software_Engineer_Yordan-Dimitrov.jpg" alt="ZuriAnalytics Senior Software Engineer Yordan Dimitrov">
+                            <div class="card-body">
+                                <p class="team-member">Yordan Dimitrov - Senior Software Engineer</p>
+                                <p class="team-member-text">Yordan is passionate about finance and has multiple years of experience in IT.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of col -->
+                </div>
+                <!-- end of row -->
+            </div>
+            <!-- end of container -->
+        </section>
+        <!-- end of slider-1 -->
+        <!-- end of The team -->
 
-</body>
+        <!-- Footer -->
+        {% include 'footer.njk' %}
+
+    </body>
 </html>
