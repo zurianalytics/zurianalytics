@@ -1,6 +1,21 @@
+import './particles.js';
+import './bootstrap.native.min.js';
+import './rotate-text';
+import TxtRotate from './rotate-text'
+
 window.onload = () => {
 
 
+	/* Rotate text */
+	var elements = document.getElementsByClassName('txt-rotate');
+    for (var i=0; i<elements.length; i++) {
+        var toRotate = elements[i].getAttribute('data-rotate');
+        var period = elements[i].getAttribute('data-period');
+        if (toRotate) {
+            new TxtRotate(elements[i], JSON.parse(toRotate), period);
+        }
+	}
+	
 
 
 	/* Particle.js */

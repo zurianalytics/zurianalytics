@@ -1,3 +1,8 @@
+// Imports 
+@import './icons.scss';
+@import './fonts.scss';
+@import './bootstrap.scss';
+
 /******************************/
 /*     General (All Sections) */
 /******************************/
@@ -280,7 +285,6 @@ section.white .card-image {
 footer .fa-stack .fa-stack-2x {
 	transition: all 0.2s ease;
 	color: #7dabf8;
-	size: ;
 }
 
 footer .fa-stack:hover .fa-stack-2x{
@@ -324,7 +328,6 @@ a.back-to-top {
 	width: 2.625rem;
 	height: 2.625rem;
 	border-radius: 1.875rem;
-	background: #7dabf8 url("../images/up-arrow.png") no-repeat center 47%;
 	background-size: 1.125rem 1.125rem;
 	text-indent: -9999px;
 

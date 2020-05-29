@@ -1,5 +1,6 @@
 .idea
 *.impl
+.cache
 /node_modules/
 /package-lock.json
-/build/
+/dist/

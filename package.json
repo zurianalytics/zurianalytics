@@ -2,14 +2,18 @@
   "name": "zuri-analytics-website",
   "version": "1.0.0",
   "scripts": {
-    "dev": "npx @11ty/eleventy --input=. --output=build --serve",
-    "generate": "npx @11ty/eleventy --input=. --output=build",
+    "serve:parcel": "npx parcel src/**/main.scss src/**/*.js --out-dir dist/ ",
+    "serve:eleventy": "npx @11ty/eleventy --quiet --output=dist --input=src --serve",
+    "serve": "npx npm-run-all --parallel serve:eleventy serve:parcel",
+    "generate:parcel": "npx parcel build src/**/main.scss src/**/*.js --out-dir dist/",
+    "generate:eleventy": "npx @11ty/eleventy --quiet --output=dist --input=src",
+    "generate": "npx npm-run-all generate:parcel generate:eleventy",
     "deploy": "deploy.sh"
   },
   "devDependencies": {
-    "clean-css": "^4.2.3",
     "eleventy": "^1.0.6",
     "html-minifier": "^4.0.0",
-    "terser": "^4.7.0"
+    "parcel": "^1.12.4",
+    "sass": "^1.26.7"
   }
 }
