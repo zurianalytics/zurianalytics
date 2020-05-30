@@ -26,11 +26,6 @@ a {
 	outline: none;
 }
 
-a:hover {
-	text-decoration: none;
-	color: $color-blue-000;
-}
-
 .button-link
 {
 	display: inline-block;
@@ -52,25 +47,6 @@ a:hover {
 	text-decoration: none;
 }
 
-section, footer
-{
-	padding-top: 3rem;
-	padding-bottom: 5rem;
-}
-
-section.dark, footer.dark
-{
-	background-color: $color-blue-500;
-	color: $color-blue-000;
-}
-
-.list-unstyled .fas {
-	color: $color-blue-200;
-	font-size: 0.5rem;
-	line-height: 1.375rem;
-	margin-right: 1rem;
-}
-
 i:before
 {
 	font-size: 2.2rem;
@@ -79,10 +55,32 @@ i:before
 
 
 /*********************/
-/* General Section   */
+/* General Styles   */
 /*********************/
 section, footer, header
 {
+	padding-top: 3rem;
+	padding-bottom: 5rem;
+
+	a:hover {
+		text-decoration: none;
+		color: $color-blue-200;
+	}
+
+	li
+	{
+		&:before 
+		{
+			content: '\f111';
+			font-family: "icons";
+			font-size: 0.5rem;
+			color: $color-blue-200;
+			padding: 0.2rem;
+			margin-right: 0.2rem;
+			text-align: center;
+		}
+	}
+	
 	.tagline
 	{
 		text-align: center;
@@ -99,7 +97,6 @@ section, footer, header
 	h4
 	{
 		@include typography-5;
-		color: $color-blue-200;
 	}
 
 	.special
@@ -124,6 +121,7 @@ section, footer, header
 		}
 	}
 }
+
 
 
 /*********************/
@@ -177,9 +175,10 @@ video
 /*********************/
 /*    Dark Section  */
 /*********************/
-.section.dark 
+section.dark, footer.dark
 {
-	color: $color-blue-600;
+	background-color: $color-blue-500;
+	color: $color-blue-000;
 
 	.section-label
 	{
@@ -194,13 +193,18 @@ video
 /*********************/
 section.white 
 {
+	color: $color-blue-500;
+	background-color: $color-blue-000;
+
+	h4 
+	{
+		color: $color-blue-200;
+	}
+
 	.section-label
 	{
 		color: $color-gray-300;
 	}
-
-	color: $color-blue-500;
-	background-color: $color-blue-000;
 
 	/*********************/
 	/*    Cards  */
@@ -217,7 +221,7 @@ section.white
 			width: 4rem;
 			height: 4rem;
 			border-radius: 50%;
-			background-color: $color-blue-200;
+			background-color: $color-blue-400;
 			text-align: center;
 			vertical-align: top;
 			margin-left: auto;
@@ -243,28 +247,6 @@ section.white
 	}
 }
 
-
-
-
-
-
-
-
-/**********************/
-/*     16. Footer     */
-/**********************/
-footer .fa-stack .fa-stack-2x {
-	transition: all 0.2s ease;
-	color: $color-blue-200;
-}
-
-footer .fa-stack:hover .fa-stack-2x{
-	color: white;
-}
-
-footer .fa-stack:hover .fa-stack-1x{
-	color: $color-blue-200;
-}
 
 
 
