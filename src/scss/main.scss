@@ -2,7 +2,8 @@
 @import './icons.scss';
 @import './fonts.scss';
 @import './bootstrap.scss';
-@import './variables.scss';
+@import './brand.scss';
+
 
 /******************************/
 /*     General (All Sections) */
@@ -18,59 +19,26 @@ body{
 	color: $color-blue-000;
 }
 
-.special
-{
-	color: #7dabf8;
-}
-
-h1
-{
-	@include typography-1;
-	color: $color-gray-000;
-}
-
-h2
-{
-	@include typography-5;
-	color: $color-accent-main-300;
-	text-align: center;
-	margin-top: 2.6rem;
-    margin-bottom: 2.2rem;
-}
-
-h3
-{
-	@include typography-4;
-	margin-bottom: 1rem;
-    margin-top: 1.8rem;
-	color: $color-gray-000;
-}
-
-h4
-{
-	font-size: 1rem;
-	margin: 2rem 0 2rem 0;
-}
 
 a {
-	color: #7dabf8;
+	color: $color-blue-200;
 	text-decoration: none;
 	outline: none;
 }
 
 a:hover {
 	text-decoration: none;
-	color: #fff;
+	color: $color-blue-000;
 }
 
 .button-link
 {
 	display: inline-block;
 	padding: 1.375rem 2.625rem 1.375rem 2.625rem;
-	border: 0.125rem solid #7dabf8;
+	border: 0.125rem solid $color-blue-200;
 	border-radius: 2rem;
-	background-color: #7dabf8;
-	color: #fff;
+	background-color: $color-blue-200;
+	color: $color-blue-000;
 	font: 700 0.75rem/0 "Montserrat", sans-serif;
 	text-decoration: none;
 	transition: all 0.2s;
@@ -80,7 +48,7 @@ a:hover {
 .button-link:hover
 {
 	background-color: transparent;
-	color: #7dabf8;
+	color: $color-blue-200;
 	text-decoration: none;
 }
 
@@ -90,24 +58,14 @@ section, footer
 	padding-bottom: 5rem;
 }
 
-section.white  *
-{
-	color: #1a2652 !important;
-}
-
-section.white {
-	background-color: #f3f7f9;
-	color: #1a2652;
-}
-
 section.dark, footer.dark
 {
-	background-color: $color-blue-400;
+	background-color: $color-blue-500;
 	color: $color-blue-000;
 }
 
 .list-unstyled .fas {
-	color: #7dabf8;
+	color: $color-blue-200;
 	font-size: 0.5rem;
 	line-height: 1.375rem;
 	margin-right: 1rem;
@@ -120,35 +78,88 @@ i:before
 
 
 
+/*********************/
+/* General Section   */
+/*********************/
+section, footer, header
+{
+	.tagline
+	{
+		text-align: center;
+		margin-bottom: 2rem;
+		margin-top: 2rem;
+	}
+
+	h3
+	{
+		@include typography-4;
+		margin-top: 2rem;
+	}
+
+	h4
+	{
+		@include typography-5;
+		color: $color-blue-200;
+	}
+
+	.special
+	{
+		color: $color-blue-200;
+	}
+
+	.section-label
+	{
+		@include typography-5;
+		color: $color-blue-200;
+		text-align: center;
+		margin-top: 2.6rem;
+		margin-bottom: 4rem;
+	}
+
+	&.white 
+	{
+		.section-label
+		{
+			color: $color-gray-300;
+		}
+	}
+}
+
 
 /*********************/
 /*    Main Section   */
 /*********************/
-.overlay
+header
 {
-	position:absolute !important;
-	width: 100%;
-	height: 100%;
-}
-
-header {
 	position: relative;
 	height: 100vh;
-	background: radial-gradient(circle, $color-blue-400 0%, $color-blue-600 100%);
+	background: radial-gradient(circle, $color-blue-500 0%, $color-blue-600 100%);
 	background-size: cover;
-}
 
-.blur 
-{
-	background: radial-gradient(circle, $color-blue-400-alpha0 0%, $color-blue-600 80%);
-}
+	h1
+	{
+		@include typography-1;
+		color: $color-gray-000;
+	}
 
-header.small
-{
-	height: 50vh;
-	background: rgb(5, 7, 15);
-}
+	&.small
+	{
+		height: 50vh;
+		background: rgb(5, 7, 15);
+	}
 
+	.overlay
+	{
+		position:absolute !important;
+		width: 100%;
+		height: 100%;
+	}
+
+	.blur 
+	{
+		background: radial-gradient(circle, $color-blue-500-alpha0 0%, $color-blue-600 80%);
+	}
+}
 
 
 
@@ -163,119 +174,78 @@ video
 
 
 
-
-
-/******************************/
-/*     Cards                  */
-/******************************/
-section.white .card .team-member {
-	font: 700 1rem/1.5rem "Montserrat", sans-serif;
-	text-align:center
-}
-
-section.white .card {
-	border: none;
-	background: transparent;
-	text-align: center;
-}
-
-section.white .card .card-icon {
-	display: inline-block;
-	width: 4rem;
-	height: 4rem;
-	border-radius: 50%;
-	background-color: #1a2652;
-	text-align: center;
-	vertical-align: top;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-section.white .card .card-icon i:before
+/*********************/
+/*    Dark Section  */
+/*********************/
+.section.dark 
 {
-	color: white;
-	font-size: 2rem;
-	line-height:4rem;
-}
+	color: $color-blue-600;
 
-section.white .card-image {
-	width: 11rem;
-	height: 11rem;
-	margin-right: auto;
-	margin-bottom: 0.25rem;
-	margin-left: auto;
-	border-radius: 50%;
+	.section-label
+	{
+		color: $color-blue-200;
+	}
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/************************/
-/* 05. Products Section */
-/************************/
-.tagline
+/*********************/
+/*    White Section  */
+/*********************/
+section.white 
 {
-	margin-top: -4rem;
-	text-align: center;
+	.section-label
+	{
+		color: $color-gray-300;
+	}
+
+	color: $color-blue-500;
+	background-color: $color-blue-000;
+
+	/*********************/
+	/*    Cards  */
+	/*********************/
+	& .card
+	{
+		border: none;
+		background: transparent;
+		text-align: center;
+
+		.card-icon
+		{
+			display: inline-block;
+			width: 4rem;
+			height: 4rem;
+			border-radius: 50%;
+			background-color: $color-blue-200;
+			text-align: center;
+			vertical-align: top;
+			margin-left: auto;
+			margin-right: auto;
+
+			& i:before
+			{
+				color: $color-gray-000;
+				font-size: 2rem;
+				line-height:4rem;
+			}
+		}
+
+		.card-image
+		{
+			width: 11rem;
+			height: 11rem;
+			margin-right: auto;
+			margin-bottom: 0.25rem;
+			margin-left: auto;
+			border-radius: 50%;
+		}
+	}
 }
 
-#products .nav-tabs {
-	margin-right: auto;
-	margin-bottom: 2.5rem;
-	margin-top: 2rem;
-	margin-left: auto;
-	justify-content: center;
-	border-bottom: none;
-}
 
-#products .nav-link {
-	margin-bottom: 1rem;
-	padding: 0.5rem 1.375rem 0.25rem 1.375rem;
-	border: none;
-	border-bottom: 0.1875rem solid #1a2652;
-	border-radius: 0;
-	color: #1a2652;
-	font: 700 1rem/1.75rem "Montserrat", sans-serif;
-	text-decoration: none;
-	transition: all 0.2s ease;
-}
 
-#products .nav-link.active,
-#products .nav-link:hover {
-	border-bottom: 0.1875rem solid #1a2652;
-	background-color: transparent;
-	color: #1a2652;
-}
 
-#products .nav-link .fas {
-	margin-right: 0.375rem;
-	font-size: 1rem;
-}
-
-#products .tab-content {
-	width: 100%; /* for proper display in IE11 */
-}
 
 
 
@@ -285,7 +255,7 @@ section.white .card-image {
 /**********************/
 footer .fa-stack .fa-stack-2x {
 	transition: all 0.2s ease;
-	color: #7dabf8;
+	color: $color-blue-200;
 }
 
 footer .fa-stack:hover .fa-stack-2x{
@@ -293,7 +263,7 @@ footer .fa-stack:hover .fa-stack-2x{
 }
 
 footer .fa-stack:hover .fa-stack-1x{
-	color: #7dabf8;
+	color: $color-blue-200;
 }
 
 
@@ -380,7 +350,7 @@ a.dropdown-item::before{
 	-webkit-transform: translateX(20px);
 	-moz-transform: translateX(20px);
 	transform: translateX(20px);
-	color: #7dabf8;
+	color: $color-blue-200;
 }
 
 a:not(.dropdown-toggle).nav-link::after,
@@ -391,7 +361,7 @@ a.dropdown-item::after
 	-webkit-transform: translateX(-20px);
 	-moz-transform: translateX(-20px);
 	transform: translateX(-20px);
-	color: #7dabf8;
+	color: $color-blue-200;
 }
 
 a.nav-link:hover::before,
@@ -430,7 +400,7 @@ a.dropdown-item:focus:after{
 
 .navbar-custom .nav-item .nav-link:hover,
 .navbar-custom .nav-item .nav-link.active {
-	color: #7dabf8 !important;
+	color: $color-blue-200 !important;
 }
 
 .navbar-custom .social-icons {
