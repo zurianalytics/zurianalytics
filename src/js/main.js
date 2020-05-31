@@ -31,18 +31,6 @@ window.onload = () => {
 
 
 
-	
-
-	/* Preloader */
-	(function(){
-		var preloader = document.querySelector('.spinner-wrapper');
-		setTimeout(() => { preloader.classList.add('faded'); }, 0);
-		setTimeout(() => { preloader.remove(); }, 500);
-	})();
-
-
-
-
 	/* Back To Top Button Fade in / Fade out*/
 	// create the back to top button
 	var amountScrolled = 400;

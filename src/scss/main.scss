@@ -1,9 +1,8 @@
 // Imports 
 @import './icons.scss';
-@import './fonts.scss';
 @import './bootstrap.scss';
 @import './brand.scss';
-
+@import './fonts.scss';
 
 /******************************/
 /*     General (All Sections) */
@@ -52,12 +51,16 @@ i:before
 	font-size: 2.2rem;
 }
 
+.special
+{
+	color: $color-blue-200;
+}
 
 
 /*********************/
 /* General Styles   */
 /*********************/
-section, footer, header
+section, footer
 {
 	padding-top: 3rem;
 	padding-bottom: 5rem;
@@ -97,11 +100,6 @@ section, footer, header
 	h4
 	{
 		@include typography-5;
-	}
-
-	.special
-	{
-		color: $color-blue-200;
 	}
 
 	.section-label
