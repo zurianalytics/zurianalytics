@@ -5,7 +5,6 @@ import TxtRotate from './rotate-text'
 
 window.onload = () => {
 
-
 	/* Rotate text */
 	var elements = document.getElementsByClassName('txt-rotate');
     for (var i=0; i<elements.length; i++) {
@@ -23,24 +22,10 @@ window.onload = () => {
 		if (typeof particlesJS === 'undefined')
 			return
 		/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-		particlesJS.load('particles', 'config/particles.json', function() {
+		particlesJS.load('particles', '/config/particles.json', function() {
 			console.log('callback - particles.js config loaded');
 		});
 	})();
-
-
-
-
-	/* Back To Top Button Fade in / Fade out*/
-	// create the back to top button
-	var amountScrolled = 400;
-	window.addEventListener('scroll', event =>
-	{
-        if (window.scrollY > amountScrolled)
-			document.querySelector('a.back-to-top').classList.remove('faded')
-		else
-			document.querySelector('a.back-to-top').classList.add('faded')
-	})
 
 
 
