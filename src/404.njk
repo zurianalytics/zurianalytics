@@ -18,13 +18,52 @@
     <link href="/scss/main.css" rel="stylesheet">
 	
 	<!-- Favicon  -->
-    {% include 'favicon.njk' %}
+    <link rel="icon" href="/images/ZuriAnalytics_Logo_Dark.png">
 
 </head>
 
 <body data-spy="scroll" data-target=".fixed-top">
     
-    {% include 'navigation.njk' %}
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="/#header">ZuriAnalytics</a> -->
+
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image" href="/#header/">
+            <img src="/images/ZuriAnalytics_Logo_White.png" alt="ZuriAnalytics Logo">
+            <span class = "vertically-alligned">
+                <span class = "special">Zuri</span>Analytics</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-toggler-awesome icon-menu"></a>
+            <a class="navbar-toggler-awesome icon-cancel"></a>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="/#header">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="/#details">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="/#products">PRODUCTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="/#team">TEAM</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#footer">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- end of navbar -->
 
     <!-- Body -->
     <section class="dark">
@@ -40,7 +79,7 @@
                 </div> <!-- end of col-->
                 <div class="col-lg-6 offset-lg-1">
                     <div class="image-container-large">
-                        <img style="margin-top:5.5rem;" src="/images/ZuriAnalytics-404-page.jpg" alt="ZuriAnalytics 404">
+                        <img style="margin-top:6.5rem;" src="/images/ZuriAnalytics-404-page.jpg" alt="ZuriAnalytics 404">
                     </div>
                 </div> <!-- end of col-->
             </div> <!-- end of row -->
@@ -49,7 +88,63 @@
     <!-- end of privacy content -->
 
     <!-- Footer -->
-    {% include 'footer.njk' %}
+    <footer id="footer" class="dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 px-5">
+                    <div class="footer-col">
+                        <h4>About <br/><span class ="special">Zuri</span>Analytics</h4>
+                        <p>European fintech company focused on big data processing and customization.</p>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-3 px-5">
+                    <div class="footer-col middle">
+                        <h4>Important links<br/>&nbsp</h4>
+                            <div class="media-body"><i class = "zuri-icon arrow-right"></i><a class="special" href="/terms_conditions/">Terms & Conditions</a></div>
+                            <div class="media-body"><i class = "zuri-icon arrow-right"></i><a class="special" href="/privacy_policy/">Privacy Policy</a></div>
+                            <div class="media-body"><i class = "zuri-icon arrow-right"></i><a class="special" href="/imprint/">Imprint</a></div>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-3 px-5">
+                    <div class="footer-col middle">
+                        <h4>Contact <br/>&nbsp</h4>
+                        <p>For any queries and questions approach us at <a class="special" href="mailto:contact@zurianalytics.com">contact@zurianalytics.com</a></p>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-3 px-5">
+                    <div class="footer-col last">
+                        <h4>Connect with us<br/>&nbsp</h4>
+                            <a href="https://github.com/zurianalytics">
+                                <i class = "zuri-icon size-l github"></i>
+                            </a>
+                            <a href="https://www.reddit.com/user/ZuriAnalytics">
+                                <i class = "zuri-icon size-l reddit"></i>
+                            </a>
+                            <a href="#your-link">
+                                <i class = "zuri-icon size-l linkedin"></i>
+                            </a>
+                    </div> 
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </footer> <!-- end of footer -->
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © 2020 <span class = "special">Zuri</span>Analytics. All rights reserved</p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+
+    <!-- Scripts -->
+    <script src ="/js/main.js"></script>
 
 </body>
 </html>
